@@ -1,33 +1,39 @@
 import React from "react";
+import Link from "next/link"; 
 
 const courses = [
   {
     id: 1,
-    title: "QA Automation & Full Stack Testing",
+    slug: "qa-automation",
+    title: "Full Stack QA Engineering",
     weeks: "16 Weeks",
     desc: "Manual + automation + frameworks — everything from basics to advanced testing tools. ",
   },
   {
     id: 2,
-    title: "Cybersecurity Analyst & Engineering",
+    slug: "cybersecurity",
+    title: "Cybersecurity Engineering",
     weeks: "20 Weeks",
     desc: "Threat detection, defense strategies, and hands-on security protocols. ",
   },
   {
     id: 3,
-    title: "AI-Powered Business & Data Analytics",
+    slug: "ai-business-analytics",
+    title: "Business & Data Analytics: Integrated with AI",
     weeks: "16 Weeks",
     desc: "Analyze and visualize data using AI tools, drive insights, and help businesses make data-driven decisions. From spreadsheets to machine learning — become a data-informed decision maker.",
   },
   {
     id: 4,
+    slug: "Introduction to AI",
     title: "Intro to Artificial Intelligence",
     weeks: "12 Weeks",
     desc: "Learn how AI works, where it’s going, and how to start using it now.",
   },
   {
     id: 5,
-    title: "Computer Fundamentals Bootcamp",
+    slug: "computer-fundamentals",
+    title: "Basic computer training",
     weeks: "12 Weeks",
     desc: "A complete foundation for tech beginners. Get the basics, get confident.",
   },
@@ -72,9 +78,13 @@ const ChooseCourse = () => {
                   {course.weeks}
                 </p>
                 <p className="text-gray-600 mb-4">{course.desc}</p>
-                <button className="bg-gray-800 text-white px-5 py-2 rounded-md shadow hover:bg-gray-700 transition">
-                  View Course
-                </button>
+
+                {/* ✅ Course Link */}
+                <Link href={`/courses/${course.slug}`}>
+                  <button className="bg-gray-800 text-white px-5 py-2 rounded-md shadow hover:bg-gray-700 transition">
+                    View Course
+                  </button>
+                </Link>
               </div>
             </div>
           ))}
