@@ -80,7 +80,7 @@ const ChooseCourse = () => {
                 <p className="text-gray-600 mb-4">{course.desc}</p>
 
                 {/* ✅ Course Link */}
-                <Link href={`/courses/${course.slug}`}>
+                <Link href={`/courseDetails`}>
                   <button className="bg-gray-800 text-white px-5 py-2 rounded-md shadow hover:bg-gray-700 transition">
                     View Course
                   </button>
