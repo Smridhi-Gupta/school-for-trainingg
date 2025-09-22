@@ -1,120 +1,134 @@
-'use client'
+import React from "react";
+import { CheckCircle, Wrench, Users } from "lucide-react";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion";
 
-import React, { useState } from "react";
-import { Laptop, Video, FileText, UserCheck, ClipboardList, Users, CheckCircle } from "lucide-react";
+const modules = [
+  {
+    module: "Module 1: Fundamentals",
+    topics: ["QA Basics", "Manual Testing", "Agile"],
+  },
+  {
+    module: "Module 2: Automation",
+    topics: ["Automation with Selenium", "TestNG", "Frameworks"],
+  },
+  {
+    module: "Module 3: Advanced Testing",
+    topics: ["API Testing", "JMeter", "SQL & DevOps Tools"],
+  },
+];
+const features = [
+  {
+    title: "Hands-On Projects",
+    desc: "Work on live projects to apply testing strategies.",
+    icon: <CheckCircle className="w-8 h-8 text-green-600" />,
+  },
+  {
+    title: "Industry Tools",
+    desc: "Learn Selenium, JMeter, Postman, and Jenkins.",
+    icon: <Wrench className="w-8 h-8 text-green-600" />,
+  },
+  {
+    title: "Career Support",
+    desc: "Resume building, mock interviews, and placement support.",
+    icon: <Users className="w-8 h-8 ttext-green-600" />,
+  },
+  {
+    title: "Hands-On Projects",
+    desc: "Work on live projects to apply testing strategies.",
+    icon: <CheckCircle className="w-8 h-8 text-green-600" />,
+  },
+  {
+    title: "Industry Tools",
+    desc: "Learn Selenium, JMeter, Postman, and Jenkins.",
+    icon: <Wrench className="w-8 h-8 text-green-600" />,
+  },
+  {
+    title: "Career Support",
+    desc: "Resume building, mock interviews, and placement support.",
+    icon: <Users className="w-8 h-8 text-green-600" />,
+  },
+];
 
-const QAEngineering = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  // Course features
-  const features = [
-    { icon: Laptop, title: "Student Dashboard", desc: "Track your learning and assignments easily." },
-    { icon: Video, title: "Online Live Classes", desc: "Attend live sessions with mentors." },
-    { icon: FileText, title: "Recordings", desc: "Get access to all class recordings." },
-    { icon: UserCheck, title: "Resume Building", desc: "Learn resume building with real guidance." },
-    { icon: ClipboardList, title: "Interview Preparation", desc: "Mock interviews and prep sessions." },
-    { icon: Users, title: "Easy Enrollment", desc: "Quick sign-up and payment options." },
-  ];
-
-  // Learning outcomes
-  const outcomes = [
-    "Master manual & automation testing with frameworks.",
-    "Understand SQL & API testing with real projects.",
-    "Get hands-on with JIRA, Selenium, Cucumber & more.",
-    "Industry-grade assignments & mock interviews.",
-    "Job-ready QA engineer skillset with resume guidance.",
-  ];
-
-  // Course modules
-  const modules = [
-    { title: "Manual Testing", topics: ["Basics", "Test Cases", "Bug Reports"] },
-    { title: "Database & SQL", topics: ["Joins", "Queries", "Stored Procedures"] },
-    { title: "API Testing / REST", topics: ["Postman", "Automation Scripts"] },
-    { title: "Frameworks with Java", topics: ["Selenium", "Cucumber", "TestNG"] },
-  ];
-
-  // Instructors
-  const instructors = [
-    {
-      name: "Fayek Chowdhury",
-      role: "Instructor",
-      img: "/images/instructor1.jpg",
-      desc: "10+ years experience in QA & Automation with proven track record of training students globally.",
-    },
-    {
-      name: "Ashraf Siddique",
-      role: "Mentor",
-      img: "/images/instructor2.jpg",
-      desc: "QA Engineer with 8+ years of experience in Selenium, JIRA, API Testing, and frameworks.",
-    },
-  ];
-
+export default function QAEngineering() {
   return (
-    <div className=" text-gray-100">
+    <div className="bg-gray-100 text-gray-900">
       {/* Hero Section */}
-      <section className="relative bg-gray-800 text-white py-16">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
-          <div className="max-w-lg">
-            <h1 className="text-4xl md:text-5xl font-bold leading-snug">
+      <section className="relative bg-gray-100 py-20">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 gap-12">
+          {/* Left Content */}
+          <div className="flex-1 max-w-xl">
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-snug mb-6">
               Enrollment On Going <br />
-              <span className="text-teal-400">Full Stack QA Engineering</span>
+              <span className="text-gray-600">Full Stack QA Engineering</span>
             </h1>
-            <p className="mt-4 text-gray-300">
+            <p className="text-lg text-gray-600 mb-8">
               Become a skilled QA engineer with hands-on training in Manual +
               Automation testing, SQL, API, and modern frameworks.
             </p>
-            <div className="mt-6 flex gap-4">
-              <button className="px-6 py-3 bg-teal-500 hover:bg-teal-600 rounded-lg font-semibold">
+            <div className="flex flex-wrap gap-4">
+              <button className="px-6 py-3 bg-gray-800 hover:bg-gray-900 rounded-lg font-semibold text-white">
                 Enroll Now
               </button>
-              <button className="px-6 py-3 bg-gray-700 hover:bg-gray-600 rounded-lg font-semibold">
+              <button className="px-6 py-3 bg-gray-200 hover:bg-gray-300 rounded-lg font-semibold text-gray-900">
                 Course Curriculum
               </button>
             </div>
           </div>
-          <div className="mt-10 md:mt-0">
+          {/* Right Image */}
+          <div className="flex-1 flex justify-center">
             <img
               src="/images/qa-hero.png"
               alt="QA Engineering"
-              className="rounded-lg shadow-lg"
+              className="w-full max-w-md rounded-lg shadow-lg"
             />
           </div>
         </div>
       </section>
 
       {/* Course Overview */}
-      <section className="bg-gray-900 py-12 text-gray-100">
-        <div className="container mx-auto grid md:grid-cols-3 gap-10 px-6">
-          <div className="md:col-span-2">
-            <h2 className="text-2xl font-bold mb-4">Full Stack QA Engineering</h2>
-            <p className="text-gray-300">
-              This course covers everything from manual testing to automation
-              frameworks. Build strong foundations in QA and gain hands-on
-              experience with industry-standard tools.
-            </p>
-          </div>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-bold mb-2">Enroll Now / Free Consultation</h3>
-            <p className="text-gray-400 mb-4">
-              Seats are filling fast! Don’t miss the opportunity to upskill.
-            </p>
-            <button className="w-full py-3 bg-teal-500 hover:bg-teal-600 rounded-lg font-semibold">
-              Enroll Now
-            </button>
-          </div>
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-6 md:px-12 text-center">
+          <h2 className="text-3xl font-bold mb-6">
+            Why Choose Full Stack QA Engineering?
+          </h2>
+          <p className="text-lg text-gray-600">
+            This program is designed to prepare you for real-world software
+            testing with expertise in manual and automation testing, API
+            validation, SQL, and Agile methodologies.
+          </p>
         </div>
       </section>
 
-      {/* Course Structure */}
-      <section className="py-16 bg-gray-800 text-gray-100">
-        <div className="container mx-auto px-6">
-          <h2 className="text-2xl font-bold mb-10 text-center">Course Structure Overview</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {features.map((f, i) => (
-              <div key={i} className="bg-gray-900 p-6 rounded-xl shadow-md">
-                <f.icon className="w-10 h-10 text-teal-400 mb-4" />
-                <h3 className="text-lg font-semibold">{f.title}</h3>
-                <p className="text-gray-400 text-sm mt-2">{f.desc}</p>
+      {/* Features */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          {/* Section Heading */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Course Structure Overview
+            </h2>
+            <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+              Explore the key features and benefits of our QA Engineering course.
+            </p>
+          </div>
+
+          {/* Feature Cards */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((item, idx) => (
+              <div
+                key={idx}
+                className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  {item.icon}
+                  <h3 className="text-xl font-semibold">{item.title}</h3>
+                </div>
+                <p className="text-gray-600">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -122,92 +136,96 @@ const QAEngineering = () => {
       </section>
 
       {/* Learning Outcomes */}
-      <section className="bg-gray-900 py-16">
-        <div className="container mx-auto px-6">
-          <h2 className="text-2xl font-bold mb-6 text-center">What You Will Learn</h2>
-          <ul className="space-y-4 max-w-3xl mx-auto">
-            {outcomes.map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-gray-300">
-                <CheckCircle className="text-teal-400 mt-1 w-6 h-6" />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* Course Details */}
-      <section className="bg-gray-800 py-16 text-gray-100">
-        <div className="container mx-auto px-6">
-          <h2 className="text-2xl font-bold mb-6 text-center">Details About The Course</h2>
-          <div className="space-y-4">
-            {modules.map((m, i) => (
-              <div key={i} className="bg-gray-900 rounded-lg shadow-md">
-                <button
-                  className="w-full flex justify-between px-6 py-4 font-semibold"
-                  onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                >
-                  {m.title}
-                  <span>{openIndex === i ? "-" : "+"}</span>
-                </button>
-                {openIndex === i && (
-                  <ul className="px-6 pb-4 text-gray-400 list-disc list-inside">
-                    {m.topics.map((t, j) => (
-                      <li key={j}>{t}</li>
-                    ))}
-                  </ul>
-                )}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6 md:px-12">
+          <h2 className="text-3xl font-bold mb-10 text-center">
+            What Will You Learn?
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              "Manual Testing & QA Processes",
+              "Selenium with Java/Python",
+              "API Testing with Postman",
+              "Performance Testing using JMeter",
+              "SQL for Testers",
+              "Agile & DevOps Testing",
+            ].map((point, idx) => (
+              <div key={idx} className="flex items-start gap-3">
+                <CheckCircle className="text-green-600 w-6 h-6 mt-1" />
+                <span className="text-gray-700 text-lg">{point}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Instructor Section */}
-      <section className="bg-gray-900 py-16 text-gray-100">
-        <div className="container mx-auto px-6">
-          <h2 className="text-2xl font-bold mb-8 text-center">Course Instructors</h2>
+      {/* Course Modules */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="text-3xl font-bold mb-12 text-center">
+            Course Curriculum
+          </h2>
+
+          <Accordion type="single" collapsible className="w-full space-y-4 ">
+            {modules.map((mod, idx) => (
+              <AccordionItem
+                key={idx}
+                value={`module-${idx}`}
+                className="border rounded-lg px-4"
+              >
+                <AccordionTrigger className="text-xl font-semibold">
+                  {mod.module}
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                    {mod.topics.map((topic, i) => (
+                      <li key={i}>{topic}</li>
+                    ))}
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      {/* Instructors */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6 md:px-12">
+          <h2 className="text-3xl font-bold mb-12 text-center">
+            Meet Your Instructors
+          </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            {instructors.map((ins, i) => (
-              <div key={i} className="bg-gray-800 p-6 rounded-lg shadow-md flex gap-4">
+            {[
+              {
+                name: "Amit Sharma",
+                role: "Senior QA Lead at TechCorp",
+                img: "/images/instructor1.jpg",
+              },
+              {
+                name: "Priya Verma",
+                role: "Automation Engineer at FinTech Inc.",
+                img: "/images/instructor2.jpg",
+              },
+            ].map((inst, idx) => (
+              <div
+                key={idx}
+                className="flex items-center gap-6 bg-gray-50 p-6 rounded-lg shadow-md"
+              >
                 <img
-                  src={ins.img}
-                  alt={ins.name}
+                  src={inst.img}
+                  alt={inst.name}
                   className="w-20 h-20 rounded-full object-cover"
                 />
                 <div>
-                  <h3 className="text-xl font-semibold">{ins.name}</h3>
-                  <p className="text-teal-400">{ins.role}</p>
-                  <p className="text-gray-400 mt-2">{ins.desc}</p>
+                  <h3 className="text-lg font-semibold">{inst.name}</h3>
+                  <p className="text-gray-600">{inst.role}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 py-10 text-gray-400">
-        <div className="container mx-auto px-6 grid md:grid-cols-3 gap-8">
-          <div>
-            <h4 className="text-white font-semibold mb-3">New York Office</h4>
-            <p>123 Wall Street, New York, USA</p>
-          </div>
-          <div>
-            <h4 className="text-white font-semibold mb-3">LA Office</h4>
-            <p>456 Sunset Blvd, Los Angeles, USA</p>
-          </div>
-          <div>
-            <h4 className="text-white font-semibold mb-3">Bangladesh Office</h4>
-            <p>789 Dhaka Road, Bangladesh</p>
-          </div>
-        </div>
-        <p className="text-center mt-6 text-gray-500 text-sm">
-          © {new Date().getFullYear()} Transfotech Academy. All Rights Reserved.
-        </p>
-      </footer>
     </div>
   );
-};
-
-export default QAEngineering;
+}
