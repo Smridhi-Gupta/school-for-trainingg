@@ -21,6 +21,7 @@ const modules = [
     topics: ["API Testing", "JMeter", "SQL & DevOps Tools"],
   },
 ];
+
 const features = [
   {
     title: "Hands-On Projects",
@@ -35,7 +36,7 @@ const features = [
   {
     title: "Career Support",
     desc: "Resume building, mock interviews, and placement support.",
-    icon: <Users className="w-8 h-8 ttext-green-600" />,
+    icon: <Users className="w-8 h-8 text-green-600" />,
   },
   {
     title: "Hands-On Projects",
@@ -60,7 +61,7 @@ export default function QAEngineering() {
       {/* Hero Section */}
       <section className="relative bg-gray-100 py-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 gap-12">
-          {/* Left Content */}
+          {/* Right Content */}
           <div className="flex-1 max-w-xl">
             <h1 className="text-4xl md:text-5xl font-extrabold leading-snug mb-6">
               Enrollment On Going <br />
@@ -79,33 +80,32 @@ export default function QAEngineering() {
               </button>
             </div>
           </div>
-          {/* Right Image */}
+
+          {/* Left Grey Div */}
           <div className="flex-1 flex justify-center">
-            <img
-              src="/images/qa-hero.png"
-              alt="QA Engineering"
-              className="w-full max-w-md rounded-lg shadow-lg"
-            />
+            <div className="bg-gray-300 w-full h-80 md:h-[500px] rounded-lg shadow-md flex items-center justify-center"></div>
           </div>
         </div>
       </section>
 
       {/* Course Overview */}
       <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6 md:px-12 text-center">
-          <h2 className="text-3xl font-bold mb-6">
-            Why Choose Full Stack QA Engineering?
-          </h2>
-          <p className="text-lg text-gray-600">
-            This program is designed to prepare you for real-world software
-            testing with expertise in manual and automation testing, API
-            validation, SQL, and Agile methodologies.
-          </p>
+        <div className="max-w-5xl mx-auto px-6 md:px-12">
+          <div className="p-8 border rounded-xl shadow-md hover:shadow-lg transition text-center">
+            <h2 className="text-3xl font-bold mb-6">
+              Why Choose Full Stack QA Engineering?
+            </h2>
+            <p className="text-md text-gray-600">
+              This program is designed to prepare you for real-world software
+              testing with expertise in manual and automation testing, API
+              validation, SQL, and Agile methodologies.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Features */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           {/* Section Heading */}
           <div className="text-center mb-12">
@@ -113,7 +113,8 @@ export default function QAEngineering() {
               Course Structure Overview
             </h2>
             <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-              Explore the key features and benefits of our QA Engineering course.
+              Explore the key features and benefits of our QA Engineering
+              course.
             </p>
           </div>
 
@@ -160,24 +161,27 @@ export default function QAEngineering() {
       </section>
 
       {/* Course Modules */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
           <h2 className="text-3xl font-bold mb-12 text-center">
             Course Curriculum
           </h2>
 
-          <Accordion type="single" collapsible className="w-full space-y-4 ">
+          <Accordion type="single" collapsible className="w-full space-y-4">
             {modules.map((mod, idx) => (
               <AccordionItem
                 key={idx}
                 value={`module-${idx}`}
-                className="border rounded-lg px-4"
+                className="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden transition hover:shadow-lg"
               >
-                <AccordionTrigger className="text-xl font-semibold">
+                {/* Header / Trigger */}
+                <AccordionTrigger className="text-lg md:text-xl font-semibold px-6 py-4 flex justify-between items-center hover:bg-gray-50">
                   {mod.module}
                 </AccordionTrigger>
-                <AccordionContent>
-                  <ul className="list-disc pl-6 space-y-2 text-gray-600">
+
+                {/* Content */}
+                <AccordionContent className="px-6 py-4 bg-gray-50 border-t">
+                  <ul className="list-disc pl-6 space-y-2 text-gray-700 text-base">
                     {mod.topics.map((topic, i) => (
                       <li key={i}>{topic}</li>
                     ))}
@@ -190,7 +194,7 @@ export default function QAEngineering() {
       </section>
 
       {/* Instructors */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-6xl mx-auto px-6 md:px-12">
           <h2 className="text-3xl font-bold mb-12 text-center">
             Meet Your Instructors
@@ -200,23 +204,18 @@ export default function QAEngineering() {
               {
                 name: "Amit Sharma",
                 role: "Senior QA Lead at TechCorp",
-                img: "/images/instructor1.jpg",
               },
               {
                 name: "Priya Verma",
                 role: "Automation Engineer at FinTech Inc.",
-                img: "/images/instructor2.jpg",
               },
             ].map((inst, idx) => (
               <div
                 key={idx}
                 className="flex items-center gap-6 bg-gray-50 p-6 rounded-lg shadow-md"
               >
-                <img
-                  src={inst.img}
-                  alt={inst.name}
-                  className="w-20 h-20 rounded-full object-cover"
-                />
+                {/* Grey Div instead of image */}
+                <div className="w-20 h-20 rounded-full bg-gray-300"></div>
                 <div>
                   <h3 className="text-lg font-semibold">{inst.name}</h3>
                   <p className="text-gray-600">{inst.role}</p>
