@@ -1,15 +1,24 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { FaStar } from "react-icons/fa";
+
+// Import instructor images
+import instructor1 from "./../../assets/instructors/instructor-1.png";
+import instructor2 from "./../../assets/instructors/instructor-2.png";
+import instructor3 from "./../../assets/instructors/instructor-3.png";
+import instructor4 from "./../../assets/instructors/instructor-4.png";
+import instructor5 from "./../../assets/instructors/instructor-5.png";
 
 const instructors = [
   {
     name: "Dr. Ayesha Khan",
-    qualification: "QA Lead Instructor ",
+    qualification: "QA Lead Instructor",
     experience: "10+ Years Experience",
     rating: 5,
     description:
       "12+ years in test automation, agile frameworks, and enterprise QA pipelines.",
+    img: instructor1,
   },
   {
     name: "Mr. Raj Mehta",
@@ -18,6 +27,7 @@ const instructors = [
     rating: 4,
     description:
       "Certified expert with hands-on experience in network defense, SIEM tools, and pen-testing.",
+    img: instructor2,
   },
   {
     name: "Ms. Riya Sharma",
@@ -26,6 +36,25 @@ const instructors = [
     rating: 4,
     description:
       "Data scientist with a track record of BI integrations and predictive modeling.",
+    img: instructor3,
+  },
+  {
+    name: "Dr. Ayesha Khan",
+    qualification: "QA Lead Instructor",
+    experience: "10+ Years Experience",
+    rating: 5,
+    description:
+      "12+ years in test automation, agile frameworks, and enterprise QA pipelines.",
+    img: instructor4,
+  },
+  {
+    name: "Mr. Raj Mehta",
+    qualification: "Cybersecurity Mentor",
+    experience: "8+ Years Experience",
+    rating: 4,
+    description:
+      "Certified expert with hands-on experience in network defense, SIEM tools, and pen-testing.",
+    img: instructor5,
   },
 ];
 
@@ -46,15 +75,20 @@ const Instructors = () => {
             <div className="relative w-full h-80 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
               {/* Front Side */}
               <div className="absolute inset-0 bg-white shadow-lg rounded-xl flex flex-col items-center justify-center backface-hidden p-6">
-                {/* Grey circular placeholder */}
-                <div className="w-24 h-24 rounded-full bg-gray-300 mb-4"></div>
+                {/* Image */}
+                <div className="w-24 h-24 rounded-full overflow-hidden mb-4 relative">
+                  <Image
+                    src={inst.img}
+                    alt={inst.name}
+                    className="object-cover"
+                    fill
+                  />
+                </div>
 
                 <h3 className="text-lg font-semibold text-gray-800">
                   {inst.name}
                 </h3>
-                <p className="text-sm text-gray-500 mt-1">
-                  {inst.qualification}
-                </p>
+                <p className="text-sm text-gray-500 mt-1">{inst.qualification}</p>
               </div>
 
               {/* Back Side */}
@@ -71,9 +105,7 @@ const Instructors = () => {
                   ))}
                 </div>
 
-                <p className="text-sm text-gray-200 text-center">
-                  {inst.description}
-                </p>
+                <p className="text-sm text-gray-200 text-center">{inst.description}</p>
               </div>
             </div>
           </div>

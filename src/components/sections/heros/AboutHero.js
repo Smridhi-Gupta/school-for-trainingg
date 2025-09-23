@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import heroImg from "../../../assets/About-hero/hero.webp"; // import the image
 
 const AboutHero = () => {
   return (
@@ -10,14 +12,14 @@ const AboutHero = () => {
             Who We Are
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-            School For Training  <br />{" "}
+            School For Training  <br />
             <span className="text-gray-600">Real Skills. Real Careers.</span>
           </h1>
           <p className="text-lg text-gray-600 mb-4">
             School For Training is a certified professional training institute
             based in Fremont, California, serving students and professionals
             across the U.S. through live, expert-led programs in tech and data.
-            <br></br>
+            <br />
             We equip learners with practical, job-ready skills in todays most
             in-demand fields — from QA engineering to cybersecurity, business
             analytics, and AI.
@@ -34,12 +36,14 @@ const AboutHero = () => {
 
         {/* Right Image */}
         <div className="flex justify-center">
-          <div className="w-full h-96 bg-gray-300 rounded-lg shadow-md flex items-center justify-center">
-            <span className="text-gray-700">Image Placeholder</span>
+          <div className="w-full h-96 rounded-lg shadow-md overflow-hidden relative">
+            <Image
+              src={heroImg}
+              alt="About School For Training"
+              className="object-cover"
+              fill
+            />
           </div>
-          {/* ✅ Later replace with: 
-          <img src="/about-hero.jpg" alt="About Transfotech Academy" className="w-full h-96 object-cover rounded-lg shadow-md" />
-          */}
         </div>
       </div>
     </section>

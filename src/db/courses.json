@@ -1,0 +1,310 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Full Stack QA Engineering",
+      "subtitle": "Become a skilled QA engineer with hands-on training in Manual + Automation testing, SQL, API, and modern frameworks.",
+      "enrollment": "Enrollment On Going",
+      "img": "/programs-offer/program-1.webp",
+      "weeks": "16 weeks",
+      "overview": {
+        "title": "Full Stack QA Engineering",
+        "description": "This program is designed to provide complete QA Engineering training, covering both manual and automated testing from beginner to advanced levels. Students will gain hands-on experience in continuous test automation using the Cucumber Test Automation Framework with Java and Selenium. The course also focuses on Agile/Scrum methodologies, ensuring learners understand industry best practices."
+      },
+      "features": [
+        {
+          "title": "Hands-On Projects",
+          "desc": "Work on live projects to apply testing strategies."
+        },
+        {
+          "title": "Industry Tools",
+          "desc": "Learn Selenium, JMeter, Postman, and Jenkins."
+        },
+        {
+          "title": "Career Support",
+          "desc": "Resume building, mock interviews, and placement support."
+        }
+      ],
+      "learningOutcomes": [
+        "Manual Testing & QA Processes",
+        "Selenium with Java/Python",
+        "API Testing with Postman",
+        "Performance Testing using JMeter",
+        "SQL for Testers",
+        "Agile & DevOps Testing"
+      ],
+      "modules": [
+        {
+          "module": "Module 1: Fundamentals",
+          "topics": ["QA Basics", "Manual Testing", "Agile"]
+        },
+        {
+          "module": "Module 2: Automation",
+          "topics": ["Automation with Selenium", "TestNG", "Frameworks"]
+        },
+        {
+          "module": "Module 3: Advanced Testing",
+          "topics": ["API Testing", "JMeter", "SQL & DevOps Tools"]
+        }
+      ],
+      "instructors": [
+        {
+          "name": "Amit Sharma",
+          "role": "Senior QA Lead at TechCorp"
+        },
+        {
+          "name": "Priya Verma",
+          "role": "Automation Engineer at FinTech Inc."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Cybersecurity Analyst & Engineering",
+      "subtitle": "Learn to protect systems, networks, and programs from digital attacks.",
+      "enrollment": "Enrollment Open",
+      "img": "/programs-offer/program-2.webp",
+      "weeks": "16 weeks",
+      "overview": {
+        "title": "Why Choose Cybersecurity?",
+        "description": "Get hands-on with ethical hacking, threat detection, and security protocols."
+      },
+      "features": [
+        {
+          "title": "Real-World Labs",
+          "desc": "Practice cybersecurity in simulated environments."
+        },
+        {
+          "title": "Industry Tools",
+          "desc": "Learn tools like Wireshark, Kali Linux, and Nessus."
+        },
+        {
+          "title": "Career Support",
+          "desc": "Get resume guidance, mock interviews, and placement assistance."
+        }
+      ],
+      "learningOutcomes": [
+        "Network Security",
+        "Penetration Testing",
+        "Malware Analysis",
+        "Incident Response",
+        "Compliance & Regulations"
+      ],
+      "modules": [
+        {
+          "module": "Module 1: Basics",
+          "topics": [
+            "Cybersecurity Fundamentals",
+            "Networking Basics",
+            "Linux Essentials"
+          ]
+        },
+        {
+          "module": "Module 2: Tools & Techniques",
+          "topics": [
+            "Penetration Testing",
+            "Wireshark",
+            "Vulnerability Assessment"
+          ]
+        },
+        {
+          "module": "Module 3: Advanced Security",
+          "topics": ["Ethical Hacking", "Incident Response", "Cloud Security"]
+        }
+      ],
+      "instructors": [
+        {
+          "name": "Rohan Mehta",
+          "role": "Senior Security Analyst at SecureTech"
+        },
+        {
+          "name": "Ananya Singh",
+          "role": "Cybersecurity Engineer at NetSafe"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Business Technology & Management",
+      "subtitle": "Learn the intersection of business processes and technology for career growth.",
+      "enrollment": "Enrollment Open",
+      "img": "/programs-offer/program-3.webp",
+      "weeks": "16 weeks",
+      "overview": {
+        "title": "Why Choose Business Technology?",
+        "description": "Acquire skills in digital tools, analytics, and project management for business success."
+      },
+      "features": [
+        {
+          "title": "Practical Projects",
+          "desc": "Work on real business scenarios with technology solutions."
+        },
+        {
+          "title": "Tool Mastery",
+          "desc": "Learn tools like Excel, Power BI, and project management software."
+        },
+        {
+          "title": "Career Support",
+          "desc": "Get guidance for business analyst and management roles."
+        }
+      ],
+      "learningOutcomes": [
+        "Business Process Modeling",
+        "Data Analytics",
+        "Project Management",
+        "Digital Transformation",
+        "Decision Making"
+      ],
+      "modules": [
+        {
+          "module": "Module 1: Fundamentals",
+          "topics": ["Business Basics", "Digital Literacy", "Project Planning"]
+        },
+        {
+          "module": "Module 2: Tools & Analysis",
+          "topics": [
+            "Excel & Power BI",
+            "Data Analytics",
+            "Process Optimization"
+          ]
+        },
+        {
+          "module": "Module 3: Advanced Strategies",
+          "topics": [
+            "Change Management",
+            "Digital Transformation",
+            "Leadership Skills"
+          ]
+        }
+      ],
+      "instructors": [
+        {
+          "name": "Kavita Reddy",
+          "role": "Business Analyst Lead at BizTech"
+        },
+        {
+          "name": "Suresh Kumar",
+          "role": "Project Manager at Global Corp"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Artificial Intelligence & Machine Learning",
+      "subtitle": "Learn AI & ML concepts and apply them in real-world scenarios.",
+      "enrollment": "Enrollment Open",
+      "img": "/programs-offer/program-4.webp",
+      "weeks": "16 weeks",
+      "overview": {
+        "title": "Why Choose AI & ML?",
+        "description": "Understand AI algorithms, ML models, and practical implementations."
+      },
+      "features": [
+        {
+          "title": "Hands-On Labs",
+          "desc": "Practice ML algorithms and AI workflows."
+        },
+        {
+          "title": "Tools & Frameworks",
+          "desc": "Learn Python, TensorFlow, PyTorch, and scikit-learn."
+        },
+        {
+          "title": "Career Support",
+          "desc": "Prepare for AI/ML roles with resume guidance and mock interviews."
+        }
+      ],
+      "learningOutcomes": [
+        "Python for AI/ML",
+        "Supervised & Unsupervised Learning",
+        "Deep Learning",
+        "Natural Language Processing",
+        "Model Deployment"
+      ],
+      "modules": [
+        {
+          "module": "Module 1: Basics",
+          "topics": ["Python Programming", "Math for AI", "Introduction to ML"]
+        },
+        {
+          "module": "Module 2: ML Algorithms",
+          "topics": ["Regression", "Classification", "Clustering"]
+        },
+        {
+          "module": "Module 3: Advanced AI",
+          "topics": ["Deep Learning", "NLP", "Model Deployment"]
+        }
+      ],
+      "instructors": [
+        {
+          "name": "Dr. Rajesh Gupta",
+          "role": "AI Research Scientist at AI Labs"
+        },
+        {
+          "name": "Neha Sharma",
+          "role": "ML Engineer at TechAI"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Basic Computer Skills",
+      "subtitle": "Learn essential computer skills for personal and professional use.",
+      "enrollment": "Enrollment Open",
+      "img": "/programs-offer/program-5.webp",
+      "weeks": "16 weeks",
+      "overview": {
+        "title": "Why Choose Basic Computer Skills?",
+        "description": "Master basic computing, MS Office, internet usage, and troubleshooting."
+      },
+      "features": [
+        {
+          "title": "Practical Exercises",
+          "desc": "Hands-on practice with computers and software."
+        },
+        {
+          "title": "Office Tools",
+          "desc": "Learn Word, Excel, PowerPoint, and basic networking."
+        },
+        {
+          "title": "Career Support",
+          "desc": "Guidance for office roles and computer proficiency tests."
+        }
+      ],
+      "learningOutcomes": [
+        "Basic Computer Operations",
+        "MS Office Tools",
+        "Internet & Email Usage",
+        "File Management",
+        "Basic Troubleshooting"
+      ],
+      "modules": [
+        {
+          "module": "Module 1: Computer Basics",
+          "topics": [
+            "Hardware & Software",
+            "Operating Systems",
+            "File Management"
+          ]
+        },
+        {
+          "module": "Module 2: Office Tools",
+          "topics": ["MS Word", "MS Excel", "MS PowerPoint"]
+        },
+        {
+          "module": "Module 3: Internet & Networking",
+          "topics": ["Email Usage", "Basic Networking", "Online Safety"]
+        }
+      ],
+      "instructors": [
+        {
+          "name": "Anil Verma",
+          "role": "Computer Instructor at LearnTech"
+        },
+        {
+          "name": "Sunita Joshi",
+          "role": "IT Trainer at SkillUp"
+        }
+      ]
+    }
+  ]
+}

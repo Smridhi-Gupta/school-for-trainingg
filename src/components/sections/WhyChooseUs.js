@@ -17,7 +17,6 @@ const WhyChooseUs = () => {
       <div className="flex flex-col md:flex-row items-stretch gap-6">
         {/* Left: Image Placeholder */}
         <div className="w-full md:w-2/5 bg-gray-400 rounded-2xl flex items-center justify-center">
-          <span className="text-gray-700 font-medium">Image Placeholder</span>
         </div>
 
         {/* Right: Text Content */}
@@ -74,8 +73,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Right: Image Placeholder */}
-        <div className="w-full md:w-2/5 bg-gray-400 rounded-2xl flex items-center justify-center">
-          <span className="text-gray-700 font-medium">Image Placeholder</span>
+        <div className="w-full md:w-2/5 bg-gray-400 rounded-2xl flex items-center jgustify-center">
         </div>
       </div>
     </section>
