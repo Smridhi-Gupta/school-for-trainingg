@@ -7,7 +7,7 @@ const Header = () => {
     <header className="w-full bg-gray-900 text-gray-100 shadow-lg sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between px-12 py-4">
         {/* Logo */}
-     
+
         <Image
           src="/logo.png" // apne logo ka path yahan dena hoga (public folder me rakho)
           alt="Transtech Academy Logo"
@@ -34,7 +34,7 @@ const Header = () => {
 
         {/* Student Portal Button */}
         <Link
-          href="/student-portal"
+          href="/contact"
           className="ml-6 bg-gray-700 text-white px-4 py-2 rounded-md font-semibold hover:bg-gray-600 transition-colors"
         >
           CONTACT US
