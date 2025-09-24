@@ -64,10 +64,15 @@ const Details = () => {
       <section className="relative bg-gray-100 py-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 gap-12">
           <div className="flex-1 max-w-xl">
+            {/* ✅ Status text */}
+            <p className="text-gray-400 font-semibold uppercase tracking-wide mb-2">
+              {course.status}
+            </p>
+
             <h1 className="text-4xl md:text-5xl font-extrabold leading-snug mb-6">
-              {course.status} <br />
-              <span className="text-gray-600">{course.title}</span>
+              <span>{course.title}</span>
             </h1>
+
             <p className="text-lg text-gray-600 mb-8">{course.description}</p>
             <div className="flex flex-wrap gap-4">
               <button className="px-6 py-3 bg-gray-800 hover:bg-gray-900 rounded-lg font-semibold text-white">

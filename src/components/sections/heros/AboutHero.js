@@ -12,8 +12,8 @@ const AboutHero = () => {
             Who We Are
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-            School For Training <br />
-            <span className="text-gray-600">Real Skills. Real Careers.</span>
+            School For Training  <br />
+            <span className="text-gray-600 text-xl">Real Skills. Real Careers.</span>
           </h1>
           <p className="text-lg text-gray-600 mb-4">
             School For Training is a certified professional training institute

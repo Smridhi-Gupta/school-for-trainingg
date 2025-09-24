@@ -6,7 +6,6 @@ import ProcessSteps from "@/components/sections/ProcessSteps";
 import StudentsComments from "@/components/sections/StudentsComments";
 import TopCompanies from "@/components/sections/TopCompanies";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
-import Image from "next/image";
 
 export default function Home() {
   return (
