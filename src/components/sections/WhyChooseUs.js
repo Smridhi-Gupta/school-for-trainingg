@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
           More reasons to choose us
         </p>
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-2">
-          Live Instructor-Led and Online Classes for Flexible Learning
+          Flexible Learning: Online or On-Campus – Your Choice
         </h2>
       </div>
 

@@ -14,7 +14,7 @@ const instructors = [
   {
     name: "Dr. Ayesha Khan",
     qualification: "QA Lead Instructor",
-    experience: "10+ Years Experience",
+    experience: "12+ Years Experience",
     rating: 5,
     description:
       "12+ years in test automation, agile frameworks, and enterprise QA pipelines.",
