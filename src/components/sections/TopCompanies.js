@@ -2,18 +2,25 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  FaAmazon,
-  FaGoogle,
-  FaMicrosoft,
-  FaFacebook,
-} from "react-icons/fa";
+import Image from "next/image";
+
+// ✅ Import your PNG logos
+import BAAS from "@/assets/top-companies/BAAS.png";
+import BAIS from "@/assets/top-companies/BAIS.png";
+import GlobalWomenPower from "@/assets/top-companies/GlobalWomenPower.png";
+import IE from "@/assets/top-companies/IE.png";
+import O1Visa from "@/assets/top-companies/O1-Visa.png";
+import USAIS from "@/assets/top-companies/USAIS.png";
+import USGlobal from "@/assets/top-companies/USGlobal.png";
 
 const logos = [
-  { id: 1, icon: <FaAmazon className="text-5xl text-gray-600" />, name: "Amazon" },
-  { id: 2, icon: <FaGoogle className="text-5xl text-gray-600" />, name: "Google" },
-  { id: 3, icon: <FaMicrosoft className="text-5xl text-gray-600" />, name: "Microsoft" },
-  { id: 4, icon: <FaFacebook className="text-5xl text-gray-600" />, name: "Facebook" },
+  { id: 1, src: BAAS, name: "BAAS" },
+  { id: 2, src: BAIS, name: "BAIS" },
+  { id: 3, src: GlobalWomenPower, name: "Global Women Power" },
+  { id: 4, src: IE, name: "IE" },
+  { id: 5, src: O1Visa, name: "O1 Visa" },
+  { id: 6, src: USAIS, name: "USAIS" },
+  { id: 7, src: USGlobal, name: "US Global" },
 ];
 
 const TopCompanies = () => {
@@ -33,21 +40,27 @@ const TopCompanies = () => {
         {/* Logo Slider */}
         <div className="overflow-hidden relative mt-12">
           <motion.div
-            className="flex gap-16"
+            className="flex"
             animate={{ x: ["0%", "-100%"] }}
             transition={{
               repeat: Infinity,
-              duration: 15,
+              duration: 20,
               ease: "linear",
             }}
           >
             {[...logos, ...logos].map((logo, idx) => (
               <div
                 key={idx}
-                className="flex flex-col items-center justify-center min-w-[200px]"
+                className="flex flex-col items-center justify-center min-w-[220px]"
               >
-                <div className="w-24 h-24 flex items-center justify-center bg-white shadow-md rounded-xl border border-gray-200 hover:shadow-lg transition">
-                  {logo.icon}
+                <div className="w-40 h-40 flex items-center justify-center bg-white shadow-md rounded-xl border border-gray-200 hover:shadow-lg transition p-4">
+                  <Image
+                    src={logo.src}
+                    alt={logo.name}
+                    width={150}
+                    height={150}
+                    className="object-contain"
+                  />
                 </div>
                 <p className="mt-3 text-gray-700 font-medium">{logo.name}</p>
               </div>
