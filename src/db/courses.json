@@ -3,6 +3,7 @@
     {
       "title": "Full Stack QA Engineering",
       "subtitle":"Manual + automation + frameworks — everything from basics to advanced testing tools.",
+      "weeks": "16 Weeks",
       "status": "Enrollment Ongoing",
       "img":"/programs-offer/program-1.webp",
       "description": "Full Stack QA Engineering This program is designed to provide complete QA Engineering training, covering both manual and automated testing from beginner to advanced levels. Students will gain hands-on experience in continuous test automation using the Cucumber Test Automation Framework with Java and Selenium. The course also focuses on Agile/Scrum methodologies, ensuring learners understand industry best practices.",
@@ -76,6 +77,7 @@
     {
       "title": "Basic Computing Course",
       "subtitle":"Threat detection, defense strategies, and hands-on security protocols.",
+      "weeks": "20 Weeks",
       "status": "Enrollment Ongoing",
       "img":"/programs-offer/program-2.webp",
       "description": "Basic Computing Course Get hands-on with computers—even if it’s your very first time! The Basic Computing Course at Transfotech Academy is designed for beginners, covering everything from understanding computer parts to navigating Windows, managing files, and connecting to the internet. With step-by-step lessons on organizing files, personalizing desktops, and using essential programs, you’ll build the confidence to work independently in any digital environment. This course is ideal for anyone new to technology or looking to refresh their computing skills, providing a strong foundation for success in today’s digital world.",
@@ -117,6 +119,7 @@
     {
       "title": "Data Analytics & AI Program",
       "subtitle":"From spreadsheets to machine learning — become a data-informed decision maker.",
+      "weeks": "16 Weeks",
       "status": "Registration Open",
       "img":"/programs-offer/program-3.webp",
       "description": "Data Analytics & AI Program Learn Excel, SQL, Python, and Tableau with hands-on projects, internship support, and career preparation.",
@@ -159,6 +162,8 @@
     },
     {
       "title": "Cybersecurity Engineering: Infused with Generative AI",
+      "subtitle":"Learn how AI works, where it’s going, and how to start using it now.",
+      "weeks": "12 Weeks",
       "status": "Enrollment Open",
       "img":"/programs-offer/program-4.webp",
       "description": "Cybersecurity Engineering: Infused with Generative AI Hands-on cybersecurity training covering red team, blue team, AI-assisted tools, web security, and CTF challenges.",
@@ -188,6 +193,8 @@
     },
     {
       "title": "Business & Data Analytics: Enhanced with AI",
+      "subtitle":"A complete foundation for tech beginners. Get the basics, get confident.",
+      "weeks": "12 Weeks",
       "status": "Admission in Progress",
       "img":"/programs-offer/program-5.webp",
       "description": "Business & Data Analytics: Enhanced with AI Practical training in business analytics, SQL, Python, and visualization with AI integration, career prep, and projects.",
