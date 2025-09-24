@@ -4,11 +4,11 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 
 // Import instructor images
-import instructor1 from "./../../assets/instructors/instructor-1.png";
-import instructor2 from "./../../assets/instructors/instructor-2.png";
-import instructor3 from "./../../assets/instructors/instructor-3.png";
-import instructor4 from "./../../assets/instructors/instructor-4.png";
-import instructor5 from "./../../assets/instructors/instructor-5.png";
+import instructor1 from "./../../assets/comment-avatars/avatar-4.svg";
+import instructor2 from "./../../assets/comment-avatars/avatar-1.svg";
+import instructor3 from "./../../assets/comment-avatars/avatar-2.svg";
+import instructor4 from "./../../assets/comment-avatars/avatar-4.svg";
+import instructor5 from "./../../assets/comment-avatars/avatar-1.svg";
 
 const instructors = [
   {
@@ -38,24 +38,24 @@ const instructors = [
       "Data scientist with a track record of BI integrations and predictive modeling.",
     img: instructor3,
   },
-  {
-    name: "Dr. Ayesha Khan",
-    qualification: "QA Lead Instructor",
-    experience: "10+ Years Experience",
-    rating: 5,
-    description:
-      "12+ years in test automation, agile frameworks, and enterprise QA pipelines.",
-    img: instructor4,
-  },
-  {
-    name: "Mr. Raj Mehta",
-    qualification: "Cybersecurity Mentor",
-    experience: "8+ Years Experience",
-    rating: 4,
-    description:
-      "Certified expert with hands-on experience in network defense, SIEM tools, and pen-testing.",
-    img: instructor5,
-  },
+  // {
+  //   name: "Dr. Ayesha Khan",
+  //   qualification: "QA Lead Instructor",
+  //   experience: "10+ Years Experience",
+  //   rating: 5,
+  //   description:
+  //     "12+ years in test automation, agile frameworks, and enterprise QA pipelines.",
+  //   img: instructor4,
+  // },
+  // {
+  //   name: "Mr. Raj Mehta",
+  //   qualification: "Cybersecurity Mentor",
+  //   experience: "8+ Years Experience",
+  //   rating: 4,
+  //   description:
+  //     "Certified expert with hands-on experience in network defense, SIEM tools, and pen-testing.",
+  //   img: instructor5,
+  // },
 ];
 
 const Instructors = () => {

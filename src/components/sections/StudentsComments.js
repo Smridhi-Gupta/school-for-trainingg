@@ -3,6 +3,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
+import Image from "next/image";
+
+// Avatar imports
+import avatar1 from "@/assets/comment-avatars/avatar-1.svg";
+import avatar2 from "@/assets/comment-avatars/avatar-2.svg";
+import avatar3 from "@/assets/comment-avatars/avatar-3.svg";
 
 const commentsData = [
   {
@@ -11,6 +17,7 @@ const commentsData = [
     comment:
       "This program helped me pivot into tech with confidence. The internship was a game-changer.The instructors were amazing! I learned practical skills that I could immediately apply in my projects. Highly recommend!",
     rating: 5,
+    avatar: avatar2,
   },
   {
     name: "Mohit G.",
@@ -18,6 +25,7 @@ const commentsData = [
     comment:
       "The instructors don’t just teach — they mentor you. You’re not left guessing what the industry wants.",
     rating: 4,
+    avatar: avatar1,
   },
   {
     name: "Lara T.",
@@ -25,14 +33,8 @@ const commentsData = [
     comment:
       "I walked in knowing nothing about data, and walked out building dashboards and automations for my team.",
     rating: 5,
+    avatar: avatar3,
   },
-  // {
-  //   name: "Emily Davis",
-  //   role: "UI/UX Designer",
-  //   comment:
-  //     "Loved the interactive sessions! They helped me polish my portfolio and land my first design job.",
-  //   rating: 5,
-  // },
 ];
 
 const StudentsComments = () => {
@@ -40,7 +42,6 @@ const StudentsComments = () => {
     <section className="bg-gray-50 py-16 px-6 md:px-20 overflow-hidden">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
         What Our Learners Say
-
       </h2>
 
       {/* Auto Scrolling Slider */}
@@ -61,11 +62,15 @@ const StudentsComments = () => {
             >
               {/* Student Info */}
               <div className="flex items-center mb-4">
-                {/* Grey Avatar Placeholder */}
-                <div className="w-14 h-14 rounded-full bg-gray-300 flex items-center justify-center mr-4">
-                  <span className="text-gray-600 font-bold text-lg">
-                    {item.name.charAt(0)}
-                  </span>
+                {/* Avatar */}
+                <div className="w-14 h-14 rounded-full overflow-hidden mr-4">
+                  <Image
+                    src={item.avatar}
+                    alt={`${item.name} avatar`}
+                    width={56}
+                    height={56}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Name & Role */}
