@@ -27,18 +27,18 @@ const Header = () => {
           <Link href="/about" className="hover:text-white transition-colors">
             ABOUT US
           </Link>
-          <Link href="/contact" className="hover:text-white transition-colors">
+          {/* <Link href="/contact" className="hover:text-white transition-colors">
             CONTACT US
-          </Link>
+          </Link> */}
         </nav>
 
         {/* Student Portal Button */}
-        {/* <Link
+        <Link
           href="/student-portal"
           className="ml-6 bg-gray-700 text-white px-4 py-2 rounded-md font-semibold hover:bg-gray-600 transition-colors"
         >
-          STUDENT PORTAL
-        </Link> */}
+          CONTACT US
+        </Link>
       </div>
     </header>
   );
