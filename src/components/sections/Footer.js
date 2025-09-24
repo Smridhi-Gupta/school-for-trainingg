@@ -10,6 +10,7 @@ const Footer = () => {
           <h2 className="text-2xl font-bold text-white mb-4">
             TransTech Academy
           </h2>
+          
           <p className="text-gray-400 text-sm mb-4">
             Empowering students with job-ready IT skills through hands-on
             training, certifications, and expert guidance.
