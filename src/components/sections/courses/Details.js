@@ -22,7 +22,7 @@ const Details = () => {
   if (!course) {
     return (
       <div className="text-center py-20 text-red-600">
-        <h1>Course "{courseTitle}" not found!</h1>
+        <h1>Course {courseTitle} not found!</h1>
       </div>
     );
   }
@@ -41,7 +41,7 @@ const Details = () => {
     : course.modules
     ? Array.from({ length: parseInt(course.modules) }, (_, idx) => ({
         module: `Module ${idx + 1}`,
-        topics: ["Details coming soon"], // Placeholder for Cybersecurity course
+        topics: ["Details coming soon"],
       }))
     : [];
 

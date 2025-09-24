@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -20,24 +21,24 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/" className="hover:text-white">
+              <Link href="/" className="hover:text-white">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/course" className="hover:text-white">
+              <Link href="/course" className="hover:text-white">
                 Courses
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className="hover:text-white">
+              <Link href="/about" className="hover:text-white">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-white">
+              <Link href="/contact" className="hover:text-white">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -47,24 +48,24 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-white mb-4">Resources</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="#" className="hover:text-white">
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="#" className="hover:text-white">
                 FAQs
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="#" className="hover:text-white">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="#" className="hover:text-white">
                 Terms & Conditions
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
