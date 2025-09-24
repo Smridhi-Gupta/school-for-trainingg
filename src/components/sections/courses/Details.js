@@ -60,6 +60,8 @@ const Details = () => {
 
   return (
     <div className="bg-gray-100 text-gray-900">
+
+      
       {/* Hero Section */}
       <section className="relative bg-gray-100 py-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 gap-12">
