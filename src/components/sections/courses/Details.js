@@ -86,7 +86,7 @@ const Details = () => {
 
           {/* Image Section */}
           <div className="flex-1 flex justify-center">
-            <div className="relative w-[550px] h-[365px]">
+            <div className="relative w-[600px] h-[450px]">
               <Image
                 src={course.img_banner}
                 alt={course.title}
