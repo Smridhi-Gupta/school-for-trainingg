@@ -20,23 +20,23 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="/" className="hover:text-white">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="/course" className="hover:text-white">
                 Courses
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="/about" className="hover:text-white">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
-                Contact
+              <a href="/contact" className="hover:text-white">
+                Contact Us
               </a>
             </li>
           </ul>
@@ -70,16 +70,17 @@ const Footer = () => {
         </div>
 
         {/* Newsletter */}
-        <div>
-          {/* <h3 className="text-lg font-semibold text-white mb-4">Stay Updated</h3> */}
-          {/* <p className="text-gray-400 text-sm mb-4">
-            Subscribe to our newsletter for latest updates and offers.
-          </p> */}
+        <div className="flex flex-col gap-3">
           <p className="text-gray-400 text-sm">
             <span className="font-semibold text-white">Address:</span>
             <br />
             39159 Paseo Padre Pkwy #105, <br />
             Fremont, CA 94538
+          </p>
+          <p className="text-gray-400 text-sm">
+            <span className="font-semibold text-white">Email:</span>
+            <br />
+            mukesh@schoolfortraining.com
           </p>
         </div>
       </div>

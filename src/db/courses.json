@@ -1,310 +1,234 @@
 {
   "courses": [
     {
-      "id": 1,
       "title": "Full Stack QA Engineering",
-      "subtitle": "Become a skilled QA engineer with hands-on training in Manual + Automation testing, SQL, API, and modern frameworks.",
-      "enrollment": "Enrollment On Going",
-      "img": "/programs-offer/program-1.webp",
-      "weeks": "16 weeks",
-      "overview": {
-        "title": "Full Stack QA Engineering",
-        "description": "This program is designed to provide complete QA Engineering training, covering both manual and automated testing from beginner to advanced levels. Students will gain hands-on experience in continuous test automation using the Cucumber Test Automation Framework with Java and Selenium. The course also focuses on Agile/Scrum methodologies, ensuring learners understand industry best practices."
+      "subtitle":"Manual + automation + frameworks — everything from basics to advanced testing tools.",
+      "status": "Enrollment Ongoing",
+      "img":"/programs-offer/program-1.webp",
+      "description": "Full Stack QA Engineering This program is designed to provide complete QA Engineering training, covering both manual and automated testing from beginner to advanced levels. Students will gain hands-on experience in continuous test automation using the Cucumber Test Automation Framework with Java and Selenium. The course also focuses on Agile/Scrum methodologies, ensuring learners understand industry best practices.",
+      "course_structure_overview": {
+        "student_dashboard": "Each student receives a personalized dashboard to track classes, study materials, and progress throughout the course.",
+        "online_live_classes": "Attend interactive live classes online from the comfort of your home, with opportunities to engage and ask questions in real time.",
+        "class_recordings": "If you miss a session, recorded classes are available so you can review and stay up to date with the course content.",
+        "resume_building": "Our training includes guidance on building a professional resume to help you stand out and secure your target job.",
+        "interview_preparation": "We provide comprehensive interview preparation, helping you gain the confidence and skills needed to succeed in job interviews.",
+        "easy_enrollment": "Registering for this program is quick and simple—your dream job is just a few clicks away."
       },
-      "features": [
-        {
-          "title": "Hands-On Projects",
-          "desc": "Work on live projects to apply testing strategies."
-        },
-        {
-          "title": "Industry Tools",
-          "desc": "Learn Selenium, JMeter, Postman, and Jenkins."
-        },
-        {
-          "title": "Career Support",
-          "desc": "Resume building, mock interviews, and placement support."
-        }
+      "whats_included": [
+        "4 Months of comprehensive training",
+        "16+ Instructor-Led Online Classes",
+        "2 Hours per Session",
+        "32+ Hours of Total Training",
+        "1 Month of Internship",
+        "1 Month of Interview Preparation Classes",
+        "1100+ Successful Graduates"
       ],
-      "learningOutcomes": [
-        "Manual Testing & QA Processes",
-        "Selenium with Java/Python",
-        "API Testing with Postman",
-        "Performance Testing using JMeter",
-        "SQL for Testers",
-        "Agile & DevOps Testing"
+      "what_you_will_learn": [
+        "QA engineers with full stack testing expertise are in high demand in today’s tech-driven world. This course equips you with the skills to ensure product quality and reliability across all stages of development.",
+        "QA Fundamentals – Build a strong foundation in QA principles and learn to design effective testing strategies that enhance software quality.",
+        "Manual Testing – Understand core manual testing techniques to detect and resolve bugs early in the development cycle.",
+        "Automation Testing – Master automation with Selenium and JUnit, streamlining repetitive tests for efficiency and consistency.",
+        "API Testing – Learn to validate backend functionality and service communication using Postman.",
+        "Performance & Load Testing – Gain experience with JMeter to measure application stability under different workloads.",
+        "Database Testing – Apply SQL to verify data accuracy and integrity across application states.",
+        "CI/CD Integration – Explore continuous integration and deployment practices, integrating testing into DevOps workflows.",
+        "Real-World Projects – Work on hands-on projects that simulate industry challenges in testing complex applications.",
+        "Industry Readiness – Stay updated with modern QA trends and methodologies to remain adaptable in an evolving tech landscape."
       ],
-      "modules": [
-        {
-          "module": "Module 1: Fundamentals",
-          "topics": ["QA Basics", "Manual Testing", "Agile"]
-        },
-        {
-          "module": "Module 2: Automation",
-          "topics": ["Automation with Selenium", "TestNG", "Frameworks"]
-        },
-        {
-          "module": "Module 3: Advanced Testing",
-          "topics": ["API Testing", "JMeter", "SQL & DevOps Tools"]
-        }
+      "course_details": {
+        "manual_testing": [
+          "Class 1: Software Development Life Cycle (SDLC) Phases of SDLC (Requirement, Design, Development, Testing, Deployment, Maintenance)   Waterfall vs Agile vs Iterative models   Role of QA in different SDLC phases",
+          "Class 2: Software Testing Life Cycle (STLC) Requirement analysis, Test planning, Test case design, Environment setup   Test execution and defect reporting   Test closure activities",
+          "Class 3: Different Types of Testing Practice Unit, Integration, System, Regression, UAT   Functional vs Non-functional testing   Smoke, Sanity, Exploratory testing",
+          "Class 4: Agile Software Development Model Agile principles & manifesto   Scrum framework (roles, ceremonies, artifacts)   QA’s role in Agile teams"
+        ],
+        "jira": [
+          "JIRA (Project Management/Defect Tracking Software)",
+          "Class 5: Using JIRA for Test Case Writing & Defect Writing Creating epics, stories, tasks   Writing test cases in JIRA   Logging and tracking defects",
+          "Class 6: Behavioral Driven Development (BDD) and CI/CD Gherkin syntax for BDD scenarios   Writing feature files   Integrating BDD with CI/CD pipelines"
+        ],
+        "database_and_sql": [
+          "Class 7: Getting Started with Database and SQL Database basics, relational models   SQL syntax, SELECT queries   Filtering with WHERE, ORDER BY",
+          "Class 8: SQL – Intermediate Joins (INNER, LEFT, RIGHT, FULL)   Grouping with GROUP BY & HAVING   Subqueries",
+          "Class 9: SQL – Advanced Stored procedures, functions   Triggers, indexing, optimization   Transactions and constraints"
+        ],
+        "api_testing": [
+          "Class 10: API Basics & Tools REST principles, HTTP methods (GET, POST, PUT, DELETE)   Status codes, headers, request/response format",
+          "Class 11: API Testing with Postman & Automation Writing test cases in Postman   Validating response payloads and schemas   Automating API tests & integrating with CI/CD"
+        ],
+        "test_automation": [
+          "Class 12: Test Automation Fundamentals Why automation? ROI of automation   Test automation strategy",
+          "Class 13–16: Java Basics (Java 01–04) Variables, data types, operators   Control structures (loops, conditions)   OOP concepts (classes, objects, inheritance, polymorphism)   Exception handling, collections framework",
+          "Class 17: Getting Started with Selenium Selenium WebDriver setup   Browser automation basics",
+          "Class 18: Object Locators in Selenium XPath, CSS Selectors, ID, Name, LinkText   Dynamic locators",
+          "Class 19: Synchronization, Alert Handling & Cross-Browser Testing Implicit vs Explicit waits   Handling alerts, frames, pop-ups   Running tests on multiple browsers",
+          "Class 20: TestNG Framework Annotations, Test suites   Data-driven testing with TestNG",
+          "Class 21: Maven & Keyword-Driven Framework Build management with Maven   Designing keyword-driven frameworks",
+          "Class 22: Advanced Cucumber Framework with Selenium Step definitions, hooks   Scenario outline & parameterization",
+          "Class 23: BDD & Code Version Control with GitHub BDD advanced practices   Using Git/GitHub for test versioning",
+          "Class 24: Page Object Model (POM) Designing reusable test scripts   Implementing POM pattern",
+          "Class 25: Continuous Integration (CI/CD) with Jenkins Setting up Jenkins pipelines   Automating test execution in CI/CD",
+          "Class 26: Mobile App Testing with Appium & AWS + Performance Testing Appium setup for Android & iOS testing   Running tests on AWS Device Farm   JMeter for performance/load testing",
+          "Class 27: Selenium Grid Operation and Sauce Labs Distributed test execution with Selenium Grid   Cloud-based testing using Sauce Labs"
+        ]
+      }
+    },
+    {
+      "title": "Basic Computing Course",
+      "subtitle":"Threat detection, defense strategies, and hands-on security protocols.",
+      "status": "Enrollment Ongoing",
+      "img":"/programs-offer/program-2.webp",
+      "description": "Basic Computing Course Get hands-on with computers—even if it’s your very first time! The Basic Computing Course at Transfotech Academy is designed for beginners, covering everything from understanding computer parts to navigating Windows, managing files, and connecting to the internet. With step-by-step lessons on organizing files, personalizing desktops, and using essential programs, you’ll build the confidence to work independently in any digital environment. This course is ideal for anyone new to technology or looking to refresh their computing skills, providing a strong foundation for success in today’s digital world.",
+      "course_structure_overview": {
+        "hands_on_video_lectures": "Learn essential computer skills and Windows navigation through easy-to-follow video lessons.",
+        "digital_guidebook": "Access a comprehensive guidebook with all the key resources you’ll need to strengthen your computing knowledge.",
+        "dedicated_support_group": "Stay connected with peers, share experiences, and receive additional support and resources.",
+        "weekly_live_QA_classes": "Join live Zoom sessions with expert instructors to ask questions, solve problems, and reinforce learning."
+      },
+      "whats_included": [
+        "220+ Successful Graduates",
+        "24+ Hours of In-Person Classes",
+        "Comprehensive Course Notes",
+        "Interactive Quiz Sets for Hands-On Learning",
+        "Live Instructor Support"
       ],
-      "instructors": [
-        {
-          "name": "Amit Sharma",
-          "role": "Senior QA Lead at TechCorp"
-        },
-        {
-          "name": "Priya Verma",
-          "role": "Automation Engineer at FinTech Inc."
-        }
+      "what_you_will_learn": [
+        "This course is designed for absolute beginners—perfect if you’ve never used a computer before. Even regular computer users will discover new skills and insights. It also serves as a prerequisite for advanced computer courses.",
+        "Understand computer hardware – Identify the physical components of a computer and their functions.",
+        "Navigate Windows with confidence – Master personalization, settings, and desktop tools.",
+        "Manage files and folders – Create, rename, move, and delete files efficiently.",
+        "Work with common applications – Learn how to open, save, and close essential programs.",
+        "Grasp networking basics – Discover how servers and networks function.",
+        "Use peripheral devices – Connect and manage printers, USB drives, and other devices.",
+        "Explore Windows Explorer – Organize files with libraries and understand window structures.",
+        "Apply practical exercises – Reinforce skills with hands-on practice for real-world readiness."
+      ],
+      "details_about_the_course": [
+        "1. Introduction to Computers Understanding what a computer is and how it works   Hardware vs Software basics   Types of computers and their uses   Input and output devices",
+        "2. Getting Started Powering on/off safely   Logging in and out   Mouse and keyboard usage   Understanding desktop icons and taskbar",
+        "3. Windows 10 Operating System Features of Windows 10   Start menu, search bar, and settings   Customizing the desktop (themes, wallpapers, shortcuts)   Managing multiple windows and multitasking",
+        "4. Windows Explorer Navigating the file system   Understanding folders, drives, and libraries   Copying, moving, and deleting files   Using search and quick access",
+        "5. Files and Programs Creating, saving, and opening files   File extensions and their importance   Installing and uninstalling software   Opening and closing programs properly",
+        "6. Creating and Managing Folders Creating new folders and subfolders   Renaming and organizing folders   File path understanding   Best practices for digital organization",
+        "7. Peripheral Devices Connecting and using USB drives, printers, and scanners   Installing drivers   Safely ejecting removable devices   Troubleshooting basic peripheral issues",
+        "8. Networks Basics of networking (LAN, WAN, Wi-Fi)   Understanding servers and clients   Connecting to the internet   Safe browsing practices and cybersecurity basics"
       ]
     },
     {
-      "id": 2,
-      "title": "Cybersecurity Analyst & Engineering",
-      "subtitle": "Learn to protect systems, networks, and programs from digital attacks.",
-      "enrollment": "Enrollment Open",
-      "img": "/programs-offer/program-2.webp",
-      "weeks": "16 weeks",
-      "overview": {
-        "title": "Why Choose Cybersecurity?",
-        "description": "Get hands-on with ethical hacking, threat detection, and security protocols."
+      "title": "Data Analytics & AI Program",
+      "subtitle":"From spreadsheets to machine learning — become a data-informed decision maker.",
+      "status": "Registration Open",
+      "img":"/programs-offer/program-3.webp",
+      "description": "Data Analytics & AI Program Learn Excel, SQL, Python, and Tableau with hands-on projects, internship support, and career preparation.",
+      "course_structure_overview": {
+        "portal": "Student portal with dashboard",
+        "live_classes": "Interactive online sessions",
+        "recordings": "Session recordings available",
+        "resume_support": "Yes",
+        "interview_prep": "Yes",
+        "enrollment": "Quick enrollment process"
       },
-      "features": [
-        {
-          "title": "Real-World Labs",
-          "desc": "Practice cybersecurity in simulated environments."
-        },
-        {
-          "title": "Industry Tools",
-          "desc": "Learn tools like Wireshark, Kali Linux, and Nessus."
-        },
-        {
-          "title": "Career Support",
-          "desc": "Get resume guidance, mock interviews, and placement assistance."
-        }
+      "whats_included": [
+        "16 Weeks of structured program",
+        "10+ Weekly commitment hours",
+        "Private peer community",
+        "Lifetime learning resources"
       ],
-      "learningOutcomes": [
-        "Network Security",
-        "Penetration Testing",
-        "Malware Analysis",
-        "Incident Response",
-        "Compliance & Regulations"
+      "what_you_will_learn": [
+        "Analytics fundamentals",
+        "Python for data analysis & visualization",
+        "SQL for data management",
+        "Data cleaning & preparation",
+        "EDA and statistics",
+        "Visualization (Matplotlib, Seaborn)",
+        "Hands-on projects",
+        "AI tools & trends"
       ],
-      "modules": [
-        {
-          "module": "Module 1: Basics",
-          "topics": [
-            "Cybersecurity Fundamentals",
-            "Networking Basics",
-            "Linux Essentials"
-          ]
-        },
-        {
-          "module": "Module 2: Tools & Techniques",
-          "topics": [
-            "Penetration Testing",
-            "Wireshark",
-            "Vulnerability Assessment"
-          ]
-        },
-        {
-          "module": "Module 3: Advanced Security",
-          "topics": ["Ethical Hacking", "Incident Response", "Cloud Security"]
-        }
+      "curriculum": [
+        "Excel basics, formulas, dashboards",
+        "Visualization in Excel",
+        "Databases & BI overview",
+        "SQL basics & advanced SQL",
+        "Python basics, control flow, file handling",
+        "Web scraping",
+        "Data analysis & visualization with Python",
+        "Intro to AI & ML",
+        "Capstone projects, resume, interview prep"
       ],
-      "instructors": [
-        {
-          "name": "Rohan Mehta",
-          "role": "Senior Security Analyst at SecureTech"
-        },
-        {
-          "name": "Ananya Singh",
-          "role": "Cybersecurity Engineer at NetSafe"
-        }
-      ]
+      "instructor": "Fuad Bin Saif"
     },
     {
-      "id": 3,
-      "title": "Business Technology & Management",
-      "subtitle": "Learn the intersection of business processes and technology for career growth.",
-      "enrollment": "Enrollment Open",
-      "img": "/programs-offer/program-3.webp",
-      "weeks": "16 weeks",
-      "overview": {
-        "title": "Why Choose Business Technology?",
-        "description": "Acquire skills in digital tools, analytics, and project management for business success."
-      },
-      "features": [
-        {
-          "title": "Practical Projects",
-          "desc": "Work on real business scenarios with technology solutions."
-        },
-        {
-          "title": "Tool Mastery",
-          "desc": "Learn tools like Excel, Power BI, and project management software."
-        },
-        {
-          "title": "Career Support",
-          "desc": "Get guidance for business analyst and management roles."
-        }
+      "title": "Cybersecurity Engineering: Infused with Generative AI",
+      "status": "Enrollment Open",
+      "img":"/programs-offer/program-4.webp",
+      "description": "Cybersecurity Engineering: Infused with Generative AI Hands-on cybersecurity training covering red team, blue team, AI-assisted tools, web security, and CTF challenges.",
+      "whats_included": [
+        "92+ Alumni",
+        "80+ Hours Training",
+        "Study Guides",
+        "Weekly Quizzes",
+        "Live QA",
+        "Peer Community",
+        "Lifetime Access"
       ],
-      "learningOutcomes": [
-        "Business Process Modeling",
-        "Data Analytics",
-        "Project Management",
-        "Digital Transformation",
-        "Decision Making"
+      "what_you_will_learn": [
+        "Attacker vs defender strategies",
+        "System & OS security",
+        "Network security",
+        "Offensive security (red team)",
+        "Defensive security (blue team, SIEM)",
+        "Generative AI for cybersecurity",
+        "Web app security & bug bounty",
+        "CTF challenges & labs",
+        "OSINT investigations",
+        "Career preparation"
       ],
-      "modules": [
-        {
-          "module": "Module 1: Fundamentals",
-          "topics": ["Business Basics", "Digital Literacy", "Project Planning"]
-        },
-        {
-          "module": "Module 2: Tools & Analysis",
-          "topics": [
-            "Excel & Power BI",
-            "Data Analytics",
-            "Process Optimization"
-          ]
-        },
-        {
-          "module": "Module 3: Advanced Strategies",
-          "topics": [
-            "Change Management",
-            "Digital Transformation",
-            "Leadership Skills"
-          ]
-        }
-      ],
-      "instructors": [
-        {
-          "name": "Kavita Reddy",
-          "role": "Business Analyst Lead at BizTech"
-        },
-        {
-          "name": "Suresh Kumar",
-          "role": "Project Manager at Global Corp"
-        }
-      ]
+      "modules": "10",
+      "instructor": "Fuad Bin Saif"
     },
     {
-      "id": 4,
-      "title": "Artificial Intelligence & Machine Learning",
-      "subtitle": "Learn AI & ML concepts and apply them in real-world scenarios.",
-      "enrollment": "Enrollment Open",
-      "img": "/programs-offer/program-4.webp",
-      "weeks": "16 weeks",
-      "overview": {
-        "title": "Why Choose AI & ML?",
-        "description": "Understand AI algorithms, ML models, and practical implementations."
+      "title": "Business & Data Analytics: Enhanced with AI",
+      "status": "Admission in Progress",
+      "img":"/programs-offer/program-5.webp",
+      "description": "Business & Data Analytics: Enhanced with AI Practical training in business analytics, SQL, Python, and visualization with AI integration, career prep, and projects.",
+      "course_structure_overview": {
+        "dashboard": "Yes",
+        "live_classes": "Yes",
+        "recordings": "Yes",
+        "resume_support": "Yes",
+        "interview_coaching": "Yes",
+        "enrollment": "Simple enrollment process"
       },
-      "features": [
-        {
-          "title": "Hands-On Labs",
-          "desc": "Practice ML algorithms and AI workflows."
-        },
-        {
-          "title": "Tools & Frameworks",
-          "desc": "Learn Python, TensorFlow, PyTorch, and scikit-learn."
-        },
-        {
-          "title": "Career Support",
-          "desc": "Prepare for AI/ML roles with resume guidance and mock interviews."
-        }
+      "whats_included": [
+        "16 Weeks program",
+        "10+ Weekly hours",
+        "Community access",
+        "Unlimited resources"
       ],
-      "learningOutcomes": [
-        "Python for AI/ML",
-        "Supervised & Unsupervised Learning",
-        "Deep Learning",
-        "Natural Language Processing",
-        "Model Deployment"
+      "what_you_will_learn": [
+        "Analytics principles & business decisions",
+        "Python for data analysis & visualization",
+        "SQL mastery",
+        "Data cleaning & structuring",
+        "EDA techniques",
+        "Statistical methods",
+        "Visualization with Matplotlib/Seaborn",
+        "Industry projects",
+        "AI-integrated practices"
       ],
-      "modules": [
-        {
-          "module": "Module 1: Basics",
-          "topics": ["Python Programming", "Math for AI", "Introduction to ML"]
-        },
-        {
-          "module": "Module 2: ML Algorithms",
-          "topics": ["Regression", "Classification", "Clustering"]
-        },
-        {
-          "module": "Module 3: Advanced AI",
-          "topics": ["Deep Learning", "NLP", "Model Deployment"]
-        }
+      "curriculum": [
+        "Excel for analytics & dashboards",
+        "Visualization with Excel",
+        "Databases & BI overview",
+        "SQL basics & advanced SQL",
+        "Python basics, control flow",
+        "File handling, libraries",
+        "Web scraping",
+        "Data analysis & visualization in Python",
+        "Intro to AI & ML",
+        "Capstone project, resume, interview prep"
       ],
-      "instructors": [
-        {
-          "name": "Dr. Rajesh Gupta",
-          "role": "AI Research Scientist at AI Labs"
-        },
-        {
-          "name": "Neha Sharma",
-          "role": "ML Engineer at TechAI"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Basic Computer Skills",
-      "subtitle": "Learn essential computer skills for personal and professional use.",
-      "enrollment": "Enrollment Open",
-      "img": "/programs-offer/program-5.webp",
-      "weeks": "16 weeks",
-      "overview": {
-        "title": "Why Choose Basic Computer Skills?",
-        "description": "Master basic computing, MS Office, internet usage, and troubleshooting."
-      },
-      "features": [
-        {
-          "title": "Practical Exercises",
-          "desc": "Hands-on practice with computers and software."
-        },
-        {
-          "title": "Office Tools",
-          "desc": "Learn Word, Excel, PowerPoint, and basic networking."
-        },
-        {
-          "title": "Career Support",
-          "desc": "Guidance for office roles and computer proficiency tests."
-        }
-      ],
-      "learningOutcomes": [
-        "Basic Computer Operations",
-        "MS Office Tools",
-        "Internet & Email Usage",
-        "File Management",
-        "Basic Troubleshooting"
-      ],
-      "modules": [
-        {
-          "module": "Module 1: Computer Basics",
-          "topics": [
-            "Hardware & Software",
-            "Operating Systems",
-            "File Management"
-          ]
-        },
-        {
-          "module": "Module 2: Office Tools",
-          "topics": ["MS Word", "MS Excel", "MS PowerPoint"]
-        },
-        {
-          "module": "Module 3: Internet & Networking",
-          "topics": ["Email Usage", "Basic Networking", "Online Safety"]
-        }
-      ],
-      "instructors": [
-        {
-          "name": "Anil Verma",
-          "role": "Computer Instructor at LearnTech"
-        },
-        {
-          "name": "Sunita Joshi",
-          "role": "IT Trainer at SkillUp"
-        }
-      ]
+      "instructor": "Fuad Bin Saif"
     }
   ]
 }
