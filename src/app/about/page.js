@@ -11,8 +11,8 @@ const page = () => {
         <AboutHero />
         <ChooseCourse />
         <Journey />
-        <Instructors />
-        <OurTeam />
+        {/* <Instructors /> */}
+        {/* <OurTeam /> */}
     </div>
   );
 };

@@ -15,7 +15,7 @@ export default function Home() {
       <ProcessSteps />
       <TopCompanies />
       <ChooseCourse />
-      <Instructors />
+      {/* <Instructors /> */}
       <Achievements />
       <WhyChooseUs />
       <StudentsComments />

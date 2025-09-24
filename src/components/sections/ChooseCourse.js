@@ -33,7 +33,7 @@ const ChooseCourse = () => {
               }`}
             >
               {/* Image */}
-              <div className="w-full h-56 rounded-lg shadow-md border border-gray-200 overflow-hidden relative">
+              <div className="w-full h-80 rounded-lg shadow-md border border-gray-200 overflow-hidden relative">
                 <Image
                   src={course.img}
                   alt={course.title}
@@ -43,18 +43,18 @@ const ChooseCourse = () => {
               </div>
 
               {/* Card */}
-              <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">
+              <div className=" rounded-lg border-gray-200 p-8 h-80 flex flex-col justify-center">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">
                   {course.title}
                 </h3>
                 <p className="text-green-600 font-semibold mb-2">
                   {course.weeks}
                 </p>
-                <p className="text-gray-600 mb-4">{course.subtitle}</p>
+                <p className="text-gray-600 mb-4 flex-grow">{course.subtitle}</p>
 
                 {/* ✅ Course Link */}
                 <Link href={`/courseDetails/${course.title}`}>
-                  <button className="bg-gray-800 text-white px-5 py-2 rounded-md shadow hover:bg-gray-700 transition">
+                  <button className="bg-gray-800 text-white px-6 py-2 rounded-md shadow hover:bg-gray-700 transition">
                     View Course
                   </button>
                 </Link>
