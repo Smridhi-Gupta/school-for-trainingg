@@ -15,7 +15,7 @@ const Journey = () => {
       </div>
 
       {/* Timeline / Journey Points */}
-      <div className="relative border-l-6 border-green-600 ml-4 space-y-10">
+      <div className="relative border-l-6 border-gray-600 ml-4 space-y-10">
         {/* Point 1 */}
         <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 relative -left-6">
           <h4 className="text-xl font-bold text-gray-900 mb-2">
@@ -60,8 +60,8 @@ const Journey = () => {
       </div>
 
       {/* Verification Section */}
-      <div className="bg-green-50 border w-11/12 mx-auto border-green-300 rounded-2xl shadow-md p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-6 mt-20 animate-pulse">
-        <div className="flex-shrink-0 bg-green-200 rounded-full p-4">
+      <div className="bg-gray-50 border w-11/12 mx-auto border-gray-300 rounded-2xl shadow-md p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-6 mt-20 animate-pulse">
+        <div className="flex-shrink-0 bg-gray-200 rounded-full p-4">
           <ShieldCheck className="w-10 h-10 text-gray-500" />
         </div>
         <div>
