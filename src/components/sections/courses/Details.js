@@ -80,7 +80,6 @@ const Details = () => {
           </div>
           <div className="flex-1 flex justify-center">
             <div className="bg-gray-300 w-full h-80 md:h-[500px] rounded-lg shadow-md flex items-center justify-center">
-              <span className="text-gray-600">Course Image Placeholder</span>
             </div>
           </div>
         </div>
