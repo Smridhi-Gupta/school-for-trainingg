@@ -14,23 +14,49 @@ import coursesData from "./../../../db/courses.json";
 
 const Details = () => {
   const params = useParams();
-
-  // Decode URL param to normal string
   const courseTitle = decodeURIComponent(params.id);
-
-  // Find course object matching title
   const course = coursesData.courses.find(
     (c) => c.title.toLowerCase() === courseTitle.toLowerCase()
   );
 
-  // If course not found
   if (!course) {
     return (
       <div className="text-center py-20 text-red-600">
-        <h1>Course {courseTitle} not found!</h1>
+        <h1>Course "{courseTitle}" not found!</h1>
       </div>
     );
   }
+
+  // Handle course modules/curriculum dynamically
+  const modules = course.course_details
+    ? Object.entries(course.course_details).map(([module, topics]) => ({
+        module,
+        topics,
+      }))
+    : course.curriculum
+    ? course.curriculum.map((item, idx) => ({
+        module: `Topic ${idx + 1}`,
+        topics: [item],
+      }))
+    : course.modules
+    ? Array.from({ length: parseInt(course.modules) }, (_, idx) => ({
+        module: `Module ${idx + 1}`,
+        topics: ["Details coming soon"], // Placeholder for Cybersecurity course
+      }))
+    : [];
+
+  // Handle instructor data
+  const instructors = course.instructor
+    ? [{ name: course.instructor, role: "Lead Instructor" }]
+    : [{ name: "TBA", role: "Instructor to be announced" }];
+
+  // Handle course structure overview
+  const courseStructure = course.course_structure_overview
+    ? Object.entries(course.course_structure_overview).map(([key, value]) => ({
+        key: key.replace(/_/g, " ").toUpperCase(),
+        value,
+      }))
+    : [];
 
   return (
     <div className="bg-gray-100 text-gray-900">
@@ -39,10 +65,10 @@ const Details = () => {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 gap-12">
           <div className="flex-1 max-w-xl">
             <h1 className="text-4xl md:text-5xl font-extrabold leading-snug mb-6">
-              {course.enrollment} <br />
+              {course.status} <br />
               <span className="text-gray-600">{course.title}</span>
             </h1>
-            <p className="text-lg text-gray-600 mb-8">{course.subtitle}</p>
+            <p className="text-lg text-gray-600 mb-8">{course.description}</p>
             <div className="flex flex-wrap gap-4">
               <button className="px-6 py-3 bg-gray-800 hover:bg-gray-900 rounded-lg font-semibold text-white">
                 Enroll Now
@@ -52,24 +78,54 @@ const Details = () => {
               </button>
             </div>
           </div>
-
           <div className="flex-1 flex justify-center">
-            <div className="bg-gray-300 w-full h-80 md:h-[500px] rounded-lg shadow-md flex items-center justify-center"></div>
+            <div className="bg-gray-300 w-full h-80 md:h-[500px] rounded-lg shadow-md flex items-center justify-center">
+              <span className="text-gray-600">Course Image Placeholder</span>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Course Overview */}
+      {/* Overview */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6 md:px-12">
           <div className="p-8 border rounded-xl shadow-md hover:shadow-lg transition text-center">
-            <h2 className="text-3xl font-bold mb-6">{course.overview.title}</h2>
-            <p className="text-md text-gray-600">
-              {course.overview.description}
-            </p>
+            <h2 className="text-3xl font-bold mb-6">Course Overview</h2>
+            <p className="text-md text-gray-600">{course.description}</p>
           </div>
         </div>
       </section>
+
+      {/* Course Structure Overview */}
+      {courseStructure.length > 0 && (
+        <section className="py-10 bg-white">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+                Course Structure
+              </h2>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {courseStructure.map((feature, idx) => {
+                const icons = [CheckCircle, Wrench, Users];
+                const Icon = icons[idx % icons.length];
+                return (
+                  <div
+                    key={idx}
+                    className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition"
+                  >
+                    <div className="flex items-center gap-3 mb-4">
+                      <Icon className="w-8 h-8 text-green-600" />
+                      <h3 className="text-xl font-semibold">{feature.key}</h3>
+                    </div>
+                    <p className="text-gray-600">{feature.value}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Features */}
       <section className="py-10 bg-white">
@@ -79,22 +135,16 @@ const Details = () => {
               Course Features
             </h2>
           </div>
-
           <div className="grid md:grid-cols-3 gap-8">
-            {course.features.map((feature, idx) => {
-              // Use icons alternately
+            {course.whats_included.map((feature, idx) => {
               const icons = [CheckCircle, Wrench, Users];
               const Icon = icons[idx % icons.length];
               return (
-                <div
-                  key={idx}
-                  className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition"
-                >
+                <div key={idx} className="p-6">
                   <div className="flex items-center gap-3 mb-4">
                     <Icon className="w-8 h-8 text-green-600" />
-                    <h3 className="text-xl font-semibold">{feature.title}</h3>
+                    <h3 className="text-xl font-semibold">{feature}</h3>
                   </div>
-                  <p className="text-gray-600">{feature.desc}</p>
                 </div>
               );
             })}
@@ -109,10 +159,12 @@ const Details = () => {
             What Will You Learn?
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {course.learningOutcomes.map((point, idx) => (
+            {course.what_you_will_learn.map((point, idx) => (
               <div key={idx} className="flex items-start gap-3">
-                <CheckCircle className="text-green-600 w-6 h-6 mt-1" />
-                <span className="text-gray-700 text-lg">{point}</span>
+                <CheckCircle className="text-green-600 w-8 h-8 mt-1 flex-shrink-0" />
+                <span className="text-gray-700 text-lg leading-relaxed">
+                  {point}
+                </span>
               </div>
             ))}
           </div>
@@ -120,34 +172,35 @@ const Details = () => {
       </section>
 
       {/* Course Modules */}
-      <section className="py-10 bg-white">
-        <div className="max-w-4xl mx-auto px-6 md:px-12">
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            Course Curriculum
-          </h2>
-
-          <Accordion type="single" collapsible className="w-full space-y-4">
-            {course.modules.map((mod, idx) => (
-              <AccordionItem
-                key={idx}
-                value={`module-${idx}`}
-                className="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden transition hover:shadow-lg"
-              >
-                <AccordionTrigger className="text-lg md:text-xl font-semibold px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                  {mod.module}
-                </AccordionTrigger>
-                <AccordionContent className="px-6 py-4 bg-gray-50 border-t">
-                  <ul className="list-disc pl-6 space-y-2 text-gray-700 text-base">
-                    {mod.topics.map((topic, i) => (
-                      <li key={i}>{topic}</li>
-                    ))}
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
+      {modules.length > 0 && (
+        <section className="py-10 bg-white">
+          <div className="max-w-4xl mx-auto px-6 md:px-12">
+            <h2 className="text-3xl font-bold mb-12 text-center">
+              Course Curriculum
+            </h2>
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              {modules.map((mod, idx) => (
+                <AccordionItem
+                  key={idx}
+                  value={`module-${idx}`}
+                  className="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden transition hover:shadow-lg"
+                >
+                  <AccordionTrigger className="text-lg md:text-xl font-semibold px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                    {mod.module}
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 py-4 bg-gray-50 border-t">
+                    <ul className="list-disc pl-6 space-y-2 text-gray-700 text-base">
+                      {mod.topics.map((topic, i) => (
+                        <li key={i}>{topic}</li>
+                      ))}
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </section>
+      )}
 
       {/* Instructors */}
       <section className="py-10 bg-white">
@@ -156,7 +209,7 @@ const Details = () => {
             Meet Your Instructors
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            {course.instructors.map((inst, idx) => (
+            {instructors.map((inst, idx) => (
               <div
                 key={idx}
                 className="flex items-center gap-6 bg-gray-50 p-6 rounded-lg shadow-md"

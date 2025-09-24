@@ -64,8 +64,12 @@ const Instructors = () => {
       <div className="text-center mb-12">
         <p className="text-gray-500 text-sm uppercase">Our Instructors</p>
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-2">
-          Meet Our Experienced Instructors
+          Learn From Industry Veterans
         </h2>
+        <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          Your instructors aren’t just teachers — they’re pros who’ve done the
+          work and know what hiring managers look for.
+        </p>
       </div>
 
       {/* Flip Cards */}
@@ -88,7 +92,9 @@ const Instructors = () => {
                 <h3 className="text-lg font-semibold text-gray-800">
                   {inst.name}
                 </h3>
-                <p className="text-sm text-gray-500 mt-1">{inst.qualification}</p>
+                <p className="text-sm text-gray-500 mt-1">
+                  {inst.qualification}
+                </p>
               </div>
 
               {/* Back Side */}
@@ -105,7 +111,9 @@ const Instructors = () => {
                   ))}
                 </div>
 
-                <p className="text-sm text-gray-200 text-center">{inst.description}</p>
+                <p className="text-sm text-gray-200 text-center">
+                  {inst.description}
+                </p>
               </div>
             </div>
           </div>

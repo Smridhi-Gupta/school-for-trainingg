@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="w-full bg-gray-900 text-gray-100 shadow-lg">
+    <header className="w-full bg-gray-900 text-gray-100 shadow-lg sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="text-2xl font-bold tracking-wide text-white">
@@ -19,10 +19,10 @@ const Header = () => {
             COURSE
           </Link>
           <Link href="/about" className="hover:text-white transition-colors">
-            ABOUT
+            ABOUT US
           </Link>
           <Link href="/contact" className="hover:text-white transition-colors">
-            CONTACT
+            CONTACT US
           </Link>
         </nav>
 
