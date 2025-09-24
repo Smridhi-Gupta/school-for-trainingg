@@ -15,7 +15,7 @@ const Journey = () => {
       </div>
 
       {/* Timeline / Journey Points */}
-      <div className="relative border-l-4 border-green-600 ml-4 space-y-10">
+      <div className="relative border-l-6 border-green-600 ml-4 space-y-10">
         {/* Point 1 */}
         <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 relative -left-6">
           <h4 className="text-xl font-bold text-gray-900 mb-2">
