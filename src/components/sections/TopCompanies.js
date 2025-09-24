@@ -2,18 +2,29 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  FaAmazon,
-  FaGoogle,
-  FaMicrosoft,
-  FaFacebook,
-} from "react-icons/fa";
+import { FaAmazon, FaGoogle, FaMicrosoft, FaFacebook } from "react-icons/fa";
 
 const logos = [
-  { id: 1, icon: <FaAmazon className="text-5xl text-gray-600" />, name: "Amazon" },
-  { id: 2, icon: <FaGoogle className="text-5xl text-gray-600" />, name: "Google" },
-  { id: 3, icon: <FaMicrosoft className="text-5xl text-gray-600" />, name: "Microsoft" },
-  { id: 4, icon: <FaFacebook className="text-5xl text-gray-600" />, name: "Facebook" },
+  {
+    id: 1,
+    icon: <FaAmazon className="text-5xl text-gray-600" />,
+    name: "Amazon",
+  },
+  {
+    id: 2,
+    icon: <FaGoogle className="text-5xl text-gray-600" />,
+    name: "Google",
+  },
+  {
+    id: 3,
+    icon: <FaMicrosoft className="text-5xl text-gray-600" />,
+    name: "Microsoft",
+  },
+  {
+    id: 4,
+    icon: <FaFacebook className="text-5xl text-gray-600" />,
+    name: "Facebook",
+  },
 ];
 
 const TopCompanies = () => {
@@ -21,7 +32,7 @@ const TopCompanies = () => {
     <section className="bg-gray-50 py-20 px-6">
       <div className="container mx-auto text-center">
         {/* Subheading */}
-        <h3 className="text-sm font-semibold text-green-600 uppercase tracking-wide">
+        <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
           Top Companies
         </h3>
 

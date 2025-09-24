@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import icon1 from './../../assets/Home-career-journey/career-1.png'
-import icon2 from './../../assets/Home-career-journey/career-2.png'
-import icon3 from './../../assets/Home-career-journey/career-3.png'
-import icon4 from './../../assets/Home-career-journey/career-4.png'
-import icon5 from './../../assets/Home-career-journey/career-5.png'
-import icon6 from './../../assets/Home-career-journey/career-6.png'
+import icon1 from "./../../assets/Home-career-journey/career-1.png";
+import icon2 from "./../../assets/Home-career-journey/career-2.png";
+import icon3 from "./../../assets/Home-career-journey/career-3.png";
+import icon4 from "./../../assets/Home-career-journey/career-4.png";
+import icon5 from "./../../assets/Home-career-journey/career-5.png";
+import icon6 from "./../../assets/Home-career-journey/career-6.png";
 
 const steps = [
   {
@@ -52,7 +52,7 @@ const ProcessSteps = () => {
       <div className="container mx-auto px-40">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h3 className="text-sm font-semibold text-green-600 uppercase tracking-wide">
+          <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
             From Learner to Leader
           </h3>
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">

@@ -40,7 +40,9 @@ const commentsData = [
 const StudentsComments = () => {
   return (
     <section className="bg-gray-50 py-16 px-6 md:px-20 overflow-hidden">
-      <p className="text-green-600 font-semibold uppercase tracking-wide text-center">Here Are More Reasons</p>
+      <p className="text-gray-500 font-semibold uppercase tracking-wide text-center">
+        Here Are More Reasons
+      </p>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
         What Our Learners Say
       </h2>
