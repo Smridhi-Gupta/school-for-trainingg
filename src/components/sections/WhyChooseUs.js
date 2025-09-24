@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Right: Text Content */}
-        <div className="w-full md:w-3/5 bg-gray-100 p-8 rounded-2xl flex flex-col justify-center">
+        <div className="w-full md:w-3/5  p-8 rounded-2xl flex flex-col justify-center">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
             Live Instructor-Led Classes in Fremont, California
           </h3>
@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
       {/* Section 2: Text Left, Image Right */}
       <div className="flex flex-col md:flex-row items-stretch gap-6">
         {/* Left: Text Content */}
-        <div className="w-full md:w-3/5 bg-gray-100 p-8 rounded-2xl flex flex-col justify-center">
+        <div className="w-full md:w-3/5  p-8 rounded-2xl flex flex-col justify-center">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
             Live Online Classes — Learn From Anywhere
           </h3>
