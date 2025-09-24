@@ -65,12 +65,12 @@ const Details = () => {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 gap-12">
           <div className="flex-1 max-w-xl">
             {/* ✅ Status text */}
-            <p className="text-gray-500 font-semibold uppercase tracking-wide mb-2">
+            <p className="text-gray-400 font-semibold uppercase tracking-wide mb-2">
               {course.status}
             </p>
 
             <h1 className="text-4xl md:text-5xl font-extrabold leading-snug mb-6">
-              <span className="text-gray-600">{course.title}</span>
+              <span>{course.title}</span>
             </h1>
 
             <p className="text-lg text-gray-600 mb-8">{course.description}</p>
