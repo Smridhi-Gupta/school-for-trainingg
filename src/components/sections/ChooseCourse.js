@@ -27,7 +27,7 @@ const ChooseCourse = () => {
         <div className="space-y-16">
           {courses.courses.map((course, idx) => (
             <div
-              key={course.id}
+              key={idx}
               className={`grid md:grid-cols-2 gap-8 items-center ${
                 idx % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
               }`}

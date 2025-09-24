@@ -49,8 +49,8 @@ const Journey = () => {
       </div>
 
       {/* Verification Section */}
-      <div className="bg-green-50 border border-green-200 rounded-2xl shadow-md p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-6 mt-20 animate-pulse">
-        <div className="flex-shrink-0 bg-green-100 rounded-full p-4">
+      <div className="bg-green-50 border w-11/12 mx-auto border-green-300 rounded-2xl shadow-md p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-6 mt-20 animate-pulse">
+        <div className="flex-shrink-0 bg-green-200 rounded-full p-4">
           <ShieldCheck className="w-10 h-10 text-green-600" />
         </div>
         <div>

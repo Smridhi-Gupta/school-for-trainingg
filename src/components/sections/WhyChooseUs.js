@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
     <section className="bg-gray-50 py-16 px-6 md:px-20 space-y-12">
       {/* Heading */}
       <div className="text-center mb-16">
-        <p className="text-gray-500 text-sm uppercase">
+        <p className="text-green-600 font-semibold uppercase tracking-wide">
           More reasons to choose us
         </p>
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-2">

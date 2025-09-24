@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "School For Training",
   description: "Next.js + Tailwind Project",
+  icons: {
+    icon: "/favicon.png", // public folder path
+  },
 };
 
 export default function RootLayout({ children }) {

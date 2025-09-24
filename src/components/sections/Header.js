@@ -1,14 +1,20 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <header className="w-full bg-gray-900 text-gray-100 shadow-lg sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <div className="text-2xl font-bold tracking-wide text-white">
-          Trans<span className="text-gray-400">tech</span> Academy
-        </div>
+     
+        <Image
+          src="/logo.png" // apne logo ka path yahan dena hoga (public folder me rakho)
+          alt="Transtech Academy Logo"
+          width={80} // apne requirement ke hisaab se size set karo
+          height={80}
+          className="object-contain"
+        />
 
         {/* Navigation Links */}
         <nav className="hidden md:flex space-x-8 font-medium">

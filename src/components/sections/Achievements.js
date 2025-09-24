@@ -25,7 +25,7 @@ const Achievements = () => {
     <section className="bg-gray-50 py-20 px-6 md:px-20">
       {/* Heading */}
       <div className="text-center mb-16">
-        <p className="text-gray-500 text-sm uppercase">Real projects, real companies, real experience</p>
+        <p className="text-green-600 font-semibold uppercase tracking-wide">Real projects, real companies, real experience</p>
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-2">
           What Sets Us Apart
         </h2>

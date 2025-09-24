@@ -4,7 +4,7 @@ import abcd from "./../../../assets/Home-hero/home-hero-2.webp"; // import image
 
 const HomeHero = () => {
   return (
-    <section className="relative bg-gray-100 text-gray-800 px-40 h-screen flex items-center">
+    <section className="relative bg-gray-100 text-gray-800 px-40  flex items-center">
       <div className="container mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
         {/* Left Side - Image */}
         <div className="w-full h-80 md:h-[500px] rounded-lg shadow-md overflow-hidden relative">

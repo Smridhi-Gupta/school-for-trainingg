@@ -8,7 +8,7 @@ const AboutHero = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 grid md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>
-          <p className="text-sm font-semibold text-gray-600 uppercase mb-2">
+          <p className="text-green-600 font-semibold uppercase tracking-wide mb-2">
             Who We Are
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
