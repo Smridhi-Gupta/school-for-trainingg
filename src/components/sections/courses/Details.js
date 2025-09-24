@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/accordion";
 
 import coursesData from "./../../../db/courses.json";
+import Image from "next/image";
 
 const Details = () => {
   const params = useParams();
@@ -27,7 +28,6 @@ const Details = () => {
     );
   }
 
-  // Handle course modules/curriculum dynamically
   const modules = course.course_details
     ? Object.entries(course.course_details).map(([module, topics]) => ({
         module,
@@ -78,8 +78,17 @@ const Details = () => {
               </button>
             </div>
           </div>
+
+          {/* Image Section */}
           <div className="flex-1 flex justify-center">
-            <div className="bg-gray-300 w-full h-80 md:h-[500px] rounded-lg shadow-md flex items-center justify-center">
+            <div className="relative w-[550px] h-[365px]">
+              <Image
+                src={course.img_banner}
+                alt={course.title}
+                fill
+                className="rounded-xl object-cover shadow-md"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -106,15 +115,13 @@ const Details = () => {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {courseStructure.map((feature, idx) => {
-                const icons = [CheckCircle, Wrench, Users];
-                const Icon = icons[idx % icons.length];
                 return (
                   <div
                     key={idx}
                     className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition"
                   >
                     <div className="flex items-center gap-3 mb-4">
-                      <Icon className="w-8 h-8 text-green-600" />
+                      <CheckCircle className="w-8 h-8 text-gray-900" />
                       <h3 className="text-xl font-semibold">{feature.key}</h3>
                     </div>
                     <p className="text-gray-600">{feature.value}</p>
@@ -136,13 +143,13 @@ const Details = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {course.whats_included.map((feature, idx) => {
-              const icons = [CheckCircle, Wrench, Users];
-              const Icon = icons[idx % icons.length];
               return (
                 <div key={idx} className="p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Icon className="w-8 h-8 text-green-600" />
-                    <h3 className="text-xl font-semibold">{feature}</h3>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-8 h-8 flex-shrink-0 text-gray-900" />
+                    <h3 className="text-lg md:text-xl font-semibold leading-snug">
+                      {feature}
+                    </h3>
                   </div>
                 </div>
               );
@@ -160,7 +167,7 @@ const Details = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {course.what_you_will_learn.map((point, idx) => (
               <div key={idx} className="flex items-start gap-3">
-                <CheckCircle className="text-green-600 w-8 h-8 mt-1 flex-shrink-0" />
+                <CheckCircle className="text-gray-900 w-8 h-8 mt-1 flex-shrink-0" />
                 <span className="text-gray-700 text-lg leading-relaxed">
                   {point}
                 </span>
@@ -184,8 +191,8 @@ const Details = () => {
                   value={`module-${idx}`}
                   className="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden transition hover:shadow-lg"
                 >
-                  <AccordionTrigger className="text-lg md:text-xl font-semibold px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                    {mod.module}
+                  <AccordionTrigger className="text-lg md:text-xl font-semibold px-6 py-4 flex justify-between items-center hover:bg-gray-50 capitalize">
+                    {mod.module.replace(/_/g, " ")}
                   </AccordionTrigger>
                   <AccordionContent className="px-6 py-4 bg-gray-50 border-t">
                     <ul className="list-disc pl-6 space-y-2 text-gray-700 text-base">
