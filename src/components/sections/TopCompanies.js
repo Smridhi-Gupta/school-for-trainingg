@@ -28,7 +28,7 @@ const TopCompanies = () => {
     <section className="bg-gray-50 py-20 px-6">
       <div className="container mx-auto text-center">
         {/* Subheading */}
-        <h3 className="text-sm font-semibold text-green-600 uppercase tracking-wide">
+        <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
           Top Companies
         </h3>
 

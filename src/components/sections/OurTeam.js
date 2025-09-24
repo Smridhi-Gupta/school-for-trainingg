@@ -33,7 +33,7 @@ const OurTeam = () => {
     <section className="bg-gray-50 py-20 px-6 md:px-20">
       {/* Management Board Section */}
       <div className="text-center mb-16">
-        <h3 className="text-green-600 font-semibold uppercase tracking-wide">
+        <h3 className="text-gray-500 font-semibold uppercase tracking-wide">
           Management Board
         </h3>
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">
@@ -62,14 +62,14 @@ const OurTeam = () => {
             <h4 className="text-lg font-semibold text-gray-900">
               {member.name}
             </h4>
-            <p className="text-green-600 font-medium text-sm">{member.role}</p>
+            <p className="text-gray-500 font-medium text-sm">{member.role}</p>
           </div>
         ))}
       </div>
 
       {/* Team Section */}
       <div className="text-center mb-16">
-        <h3 className="text-green-600 font-semibold uppercase tracking-wide">
+        <h3 className="text-gray-500 font-semibold uppercase tracking-wide">
           Our Team
         </h3>
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">
@@ -98,7 +98,7 @@ const OurTeam = () => {
             <h4 className="text-base font-semibold text-gray-900">
               {member.name}
             </h4>
-            <p className="text-green-600 font-medium text-sm">{member.role}</p>
+            <p className="text-gray-500 font-medium text-sm">{member.role}</p>
           </div>
         ))}
       </div>

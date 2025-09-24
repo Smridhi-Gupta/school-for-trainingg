@@ -62,7 +62,7 @@ const Instructors = () => {
   return (
     <section className="bg-gray-100 py-16 px-6 md:px-20">
       <div className="text-center mb-12">
-        <h3 className="text-green-600 font-semibold uppercase tracking-wide">
+        <h3 className="text-gray-500 font-semibold uppercase tracking-wide">
           Our Instructors
         </h3>
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-2">
