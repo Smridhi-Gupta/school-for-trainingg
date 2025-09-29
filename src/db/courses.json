@@ -340,9 +340,9 @@
         "Stay current with modern AI tools and trends shaping the analytics world"
       ],
       "course_details": {
-        "session_1": [
+        "Introduction to Data Analytics with Excel": [
           {
-            "class": "Session 1: Introduction to Data Analytics with Excel",
+            "class": "Introduction to Data Analytics with Excel",
             "topics": [
               "What is Data Analytics & its role in business",
               "Overview of Excel interface & navigation",
@@ -352,9 +352,9 @@
             ]
           }
         ],
-        "session_2": [
+        "Excel Formulas and Dashboard Essentials": [
           {
-            "class": "Session 2: Excel Formulas and Dashboard Essentials",
+            "class": "Excel Formulas and Dashboard Essentials",
             "topics": [
               "Logical functions: IF, AND, OR",
               "Lookup functions: VLOOKUP, HLOOKUP, INDEX-MATCH",
@@ -364,9 +364,9 @@
             ]
           }
         ],
-        "session_3": [
+        "Data Visualization with Excel": [
           {
-            "class": "Session 3: Data Visualization with Excel",
+            "class": "Data Visualization with Excel",
             "topics": [
               "Chart types: bar, line, pie, scatter etc.",
               "Customizing charts (labels, legends, colors)",
@@ -376,9 +376,9 @@
             ]
           }
         ],
-        "session_4": [
+        "Database, Data Analytics and Business Intelligence": [
           {
-            "class": "Session 4: Database, Data Analytics and Business Intelligence",
+            "class": "Database, Data Analytics and Business Intelligence",
             "topics": [
               "What is a database; relational vs non-relational",
               "Data warehouse & BI overview",
@@ -388,9 +388,9 @@
             ]
           }
         ],
-        "session_5": [
+        "DATABASE CONCEPTS AND SQL": [
           {
-            "class": "Session 5: DATABASE CONCEPTS AND SQL",
+            "class": "DATABASE CONCEPTS AND SQL",
             "topics": [
               "Data models: tables, keys, normalization",
               "Database schema design",
@@ -400,9 +400,9 @@
             ]
           }
         ],
-        "session_6": [
+        "SQL BASICS": [
           {
-            "class": "Session 6: SQL BASICS",
+            "class": "SQL BASICS",
             "topics": [
               "Basic SELECT statements",
               "WHERE filters, ORDER BY, LIMIT",
@@ -412,9 +412,9 @@
             ]
           }
         ],
-        "session_7": [
+        "ADVANCED SQL": [
           {
-            "class": "Session 5-7: ADVANCED SQL",
+            "class": "ADVANCED SQL",
             "topics": [
               "Subqueries & nested SELECTs",
               "Window functions (ROW_NUMBER, RANK, LEAD, LAG)",
@@ -424,7 +424,7 @@
             ]
           }
         ],
-        "session_8": [
+        "BUILDING SMART VISUALS FROM YOUR DATA": [
           {
             "class": "BUILDING SMART VISUALS FROM YOUR DATA",
             "topics": [
@@ -436,9 +436,9 @@
             ]
           }
         ],
-        "session_9": [
+        "CONTROL FLOW AND LOOPING": [
           {
-            "class": "Session 9: CONTROL FLOW AND LOOPING",
+            "class": "CONTROL FLOW AND LOOPING",
             "topics": [
               "Programming basics in Python: variables, control flow",
               "If‑else, for loops, while loops",
@@ -448,9 +448,9 @@
             ]
           }
         ],
-        "session_10": [
+        "CONTINUE WITH PYTHON": [
           {
-            "class": "Session 10: CONTINUE WITH PYTHON",
+            "class": "CONTINUE WITH PYTHON",
             "topics": [
               "Deep dive into Python environment (Jupyter Notebooks, IDEs)",
               "Data types, collections, built‑in functions",
@@ -460,9 +460,9 @@
             ]
           }
         ],
-        "session_11": [
+        "File Handling and Libraries": [
           {
-            "class": "Session 11: File Handling and Libraries",
+            "class": "File Handling and Libraries",
             "topics": [
               "Reading and writing files: CSV, JSON, Excel",
               "Working with OS file paths",
@@ -472,9 +472,9 @@
             ]
           }
         ],
-        "session_12": [
+        "Web Scraping": [
           {
-            "class": "Session 12: Web Scraping",
+            "class": "Web Scraping",
             "topics": [
               "What is web scraping; ethical & legal considerations",
               "Using requests/HTTP libraries",
@@ -484,9 +484,9 @@
             ]
           }
         ],
-        "session_13": [
+        "Data Analysis with Python": [
           {
-            "class": "Session 13: Data Analysis with Python",
+            "class": "Data Analysis with Python",
             "topics": [
               "Exploratory Data Analysis (EDA) steps",
               "Statistical summaries (mean, median, dispersion)",
@@ -496,9 +496,9 @@
             ]
           }
         ],
-        "session_14": [
+        "Data Visualization with Python": [
           {
-            "class": "Session 14: Data Visualization with Python",
+            "class": "Data Visualization with Python",
             "topics": [
               "Plotting with Matplotlib & Seaborn",
               "Creating multiple plot types: histograms, box plots, scatter, heatmap",
@@ -508,9 +508,9 @@
             ]
           }
         ],
-        "session_15": [
+        "AI and Machine Learning with Python": [
           {
-            "class": "Session 15: AI and Machine Learning with Python",
+            "class": "AI and Machine Learning with Python",
             "topics": [
               "Introduction to machine learning: supervised vs unsupervised",
               "Regression (linear, logistic)",
@@ -520,9 +520,9 @@
             ]
           }
         ],
-        "session_16": [
+        "SUPPLEMENTARY SESSIONS: PYTHON, SQL PROJECTS & CAREER DEVELOPMENT SUPPORT": [
           {
-            "class": "Session 16: SUPPLEMENTARY SESSIONS: PYTHON, SQL PROJECTS & CAREER DEVELOPMENT SUPPORT",
+            "class": "SUPPLEMENTARY SESSIONS: PYTHON, SQL PROJECTS & CAREER DEVELOPMENT SUPPORT",
             "topics": [
               "Capstone project: end‑to‑end implementation (Excel, SQL, Python)",
               "Real‑world dataset project & presentation",
