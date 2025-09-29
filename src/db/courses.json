@@ -40,7 +40,7 @@
       "course_details": {
         "manual_testing": [
           {
-            "class": "Class 1: Software Development Life Cycle (SDLC)",
+            "class": "Software Development Life Cycle (SDLC)",
             "topics": [
               "Phases of SDLC (Requirement, Design, Development, Testing, Deployment, Maintenance)",
               "Waterfall vs Agile vs Iterative models",
@@ -48,7 +48,7 @@
             ]
           },
           {
-            "class": "Class 2: Software Testing Life Cycle (STLC)",
+            "class": "Software Testing Life Cycle (STLC)",
             "topics": [
               "Requirement analysis, Test planning, Test case design, Environment setup",
               "Test execution and defect reporting",
@@ -56,7 +56,7 @@
             ]
           },
           {
-            "class": "Class 3: Different Types of Testing Practice",
+            "class": "Different Types of Testing Practice",
             "topics": [
               "Unit, Integration, System, Regression, UAT",
               "Functional vs Non-functional testing",
@@ -64,7 +64,7 @@
             ]
           },
           {
-            "class": "Class 4: Agile Software Development Model",
+            "class": "Agile Software Development Model",
             "topics": [
               "Agile principles & manifesto",
               "Scrum framework (roles, ceremonies, artifacts)",
@@ -74,7 +74,7 @@
         ],
         "jira": [
           {
-            "class": "Class 5: Jira – Introduction",
+            "class": "Jira – Introduction",
             "topics": [
               "Jira project setup",
               "Creating and managing issues",
@@ -82,7 +82,7 @@
             ]
           },
           {
-            "class": "Class 6: Jira – Agile Boards",
+            "class": "Jira – Agile Boards",
             "topics": [
               "Scrum vs Kanban boards",
               "Tracking sprint progress",
@@ -92,7 +92,7 @@
         ],
         "database_and_sql": [
           {
-            "class": "Class 7: Database Concepts",
+            "class": "Database Concepts",
             "topics": [
               "Relational database basics",
               "Primary & foreign keys",
@@ -100,7 +100,7 @@
             ]
           },
           {
-            "class": "Class 8: SQL Queries",
+            "class": "SQL Queries",
             "topics": [
               "SELECT, INSERT, UPDATE, DELETE",
               "Joins (INNER, LEFT, RIGHT, FULL)",
@@ -108,7 +108,7 @@
             ]
           },
           {
-            "class": "Class 9: Database Testing",
+            "class": "Database Testing",
             "topics": [
               "Data validation",
               "Stored procedures & triggers",
@@ -118,7 +118,7 @@
         ],
         "api_testing": [
           {
-            "class": "Class 10: API Testing Basics",
+            "class": "API Testing Basics",
             "topics": [
               "Understanding APIs (REST vs SOAP)",
               "HTTP methods (GET, POST, PUT, DELETE)",
@@ -126,7 +126,7 @@
             ]
           },
           {
-            "class": "Class 11: Postman for API Testing",
+            "class": "Postman for API Testing",
             "topics": [
               "Creating collections",
               "Parameterization",
@@ -134,7 +134,7 @@
             ]
           },
           {
-            "class": "Class 12: Advanced API Testing",
+            "class": "Advanced API Testing",
             "topics": [
               "Authentication (OAuth, JWT)",
               "API test environments",
@@ -144,7 +144,7 @@
         ],
         "automation_testing": [
           {
-            "class": "Class 13: Automation Basics",
+            "class": "Automation Basics",
             "topics": [
               "Why automation testing?",
               "Selenium WebDriver overview",
@@ -152,7 +152,7 @@
             ]
           },
           {
-            "class": "Class 14: Selenium with Java",
+            "class": "Selenium with Java",
             "topics": [
               "Locators (ID, XPath, CSS)",
               "Handling dynamic elements",
@@ -160,7 +160,7 @@
             ]
           },
           {
-            "class": "Class 15: Frameworks",
+            "class": "Frameworks",
             "topics": [
               "JUnit & TestNG basics",
               "Page Object Model",
@@ -168,7 +168,7 @@
             ]
           },
           {
-            "class": "Class 16: CI/CD with Automation",
+            "class": "CI/CD with Automation",
             "topics": [
               "Integrating Selenium with Jenkins",
               "Running tests in pipelines",
@@ -214,7 +214,7 @@
       "course_details": {
         "introduction_to_computers": [
           {
-            "class": "Class 1: Introduction to Computers",
+            "class": "Introduction to Computers",
             "topics": [
               "Understanding what a computer is and how it works",
               "Hardware vs Software basics",
@@ -225,7 +225,7 @@
         ],
         "getting_started": [
           {
-            "class": "Class 2: Getting Started",
+            "class": "Getting Started",
             "topics": [
               "Powering on/off safely",
               "Logging in and out",
@@ -236,7 +236,7 @@
         ],
         "windows_os": [
           {
-            "class": "Class 3: Windows 10 Operating System",
+            "class": "Windows 10 Operating System",
             "topics": [
               "Features of Windows 10",
               "Start menu, search bar, and settings",
@@ -247,7 +247,7 @@
         ],
         "windows_explorer": [
           {
-            "class": "Class 4: Windows Explorer",
+            "class": "Windows Explorer",
             "topics": [
               "Navigating the file system",
               "Understanding folders, drives, and libraries",
@@ -258,7 +258,7 @@
         ],
         "files_and_programs": [
           {
-            "class": "Class 5: Files and Programs",
+            "class": "Files and Programs",
             "topics": [
               "Creating, saving, and opening files",
               "File extensions and their importance",
@@ -269,7 +269,7 @@
         ],
         "folders_management": [
           {
-            "class": "Class 6: Creating and Managing Folders",
+            "class": "Creating and Managing Folders",
             "topics": [
               "Creating new folders and subfolders",
               "Renaming and organizing folders",
@@ -280,7 +280,7 @@
         ],
         "peripheral_devices": [
           {
-            "class": "Class 7: Peripheral Devices",
+            "class": "Peripheral Devices",
             "topics": [
               "Connecting and using USB drives, printers, and scanners",
               "Installing drivers",
@@ -291,7 +291,7 @@
         ],
         "networks": [
           {
-            "class": "Class 8: Networks",
+            "class": "Networks",
             "topics": [
               "Basics of networking (LAN, WAN, Wi-Fi)",
               "Understanding servers and clients",
@@ -573,9 +573,9 @@
         "Career Preparation: Get support with certification planning (e.g. OSCP), freelance gig setup, and job application strategy."
       ],
       "course_details": {
-        "session_1": [
+        "Cybersecurity Foundations & Core Principles": [
           {
-            "class": "Session 1: Cybersecurity Foundations & Core Principles",
+            "class": "Cybersecurity Foundations & Core Principles",
             "topics": [
               "Threat Landscape Overview (types of threats, attacker motivations)",
               "CIA Triad & Security Goals (Confidentiality, Integrity, Availability)",
@@ -585,9 +585,9 @@
             ]
           }
         ],
-        "session_2": [
+        "Operating Systems, Asset Management & System Security": [
           {
-            "class": "Session 2: Operating Systems, Asset Management & System Security",
+            "class": "Operating Systems, Asset Management & System Security",
             "topics": [
               "OS Internals (Windows, Linux, macOS architecture)",
               "Patch Management & System Hardening",
@@ -597,9 +597,9 @@
             ]
           }
         ],
-        "session_3": [
+        "Networking Fundamentals & Network Security": [
           {
-            "class": "Session 3: Networking Fundamentals & Network Security",
+            "class": "Networking Fundamentals & Network Security",
             "topics": [
               "Networking Fundamentals (TCP/IP, OSI model, routing, switching)",
               "Network Protocols & Vulnerabilities (DNS, ARP, DHCP, etc.)",
@@ -609,9 +609,9 @@
             ]
           }
         ],
-        "session_4": [
+        "Red Team Operations – Offensive Security Tactics": [
           {
-            "class": "Session 4: Red Team Operations – Offensive Security Tactics",
+            "class": "Red Team Operations – Offensive Security Tactics",
             "topics": [
               "Reconnaissance & Footprinting (passive & active)",
               "Vulnerability Scanning & Enumeration",
@@ -621,9 +621,9 @@
             ]
           }
         ],
-        "session_5": [
+        "Blue Team Operations – Defensive Security Strategies": [
           {
-            "class": "Session 5: Blue Team Operations – Defensive Security Strategies",
+            "class": "Blue Team Operations – Defensive Security Strategies",
             "topics": [
               "Incident Response Lifecycle & Forensics Basics",
               "Log Management & SIEM (Security Information and Event Management)",
@@ -633,9 +633,9 @@
             ]
           }
         ],
-        "session_6": [
+        "Generative AI for Cybersecurity Operations": [
           {
-            "class": "Session 6: Generative AI for Cybersecurity Operations",
+            "class": "Generative AI for Cybersecurity Operations",
             "topics": [
               "Overview of Generative AI & LLMs in Security",
               "AI‑Assisted Threat Intelligence & Anomaly Detection",
@@ -645,9 +645,9 @@
             ]
           }
         ],
-        "session_7": [
+        "Web Application Security & Bug Bounty Hunting": [
           {
-            "class": "Session 7: Web Application Security & Bug Bounty Hunting",
+            "class": "Web Application Security & Bug Bounty Hunting",
             "topics": [
               "Web Protocols & OWASP Top Ten (e.g. Injection, XSS, CSRF)",
               "Secure Coding Practices (input validation, sessions, authentication)",
@@ -657,7 +657,7 @@
             ]
           }
         ],
-        "session_8": [
+        "Capture the Flag (CTF) Challenges & Practical Labs": [
           {
             "class": "Capture the Flag (CTF) Challenges & Practical Labs",
             "topics": [
@@ -669,9 +669,9 @@
             ]
           }
         ],
-        "session_9": [
+        "Open Source Intelligence (OSINT) & Cyber Investigations": [
           {
-            "class": "Session 9: Open Source Intelligence (OSINT) & Cyber Investigations",
+            "class": "Open Source Intelligence (OSINT) & Cyber Investigations",
             "topics": [
               "OSINT Tools & Techniques (search engines, social media profiling, metadata, domain research)",
               "Data Validation & Source Credibility",
@@ -681,9 +681,9 @@
             ]
           }
         ],
-        "session_10": [
+        "Capstone Projects & Career Preparation": [
           {
-            "class": "Session 10: Capstone Projects & Career Preparation",
+            "class": "Capstone Projects & Career Preparation",
             "topics": [
               "Designing a Full Security Project (from planning to documentation)",
               "Simulating Red vs Blue Exercises / Attack vs Defense Scenarios",
@@ -733,9 +733,9 @@
         "Stay updated with current trends, tools, and AI-integrated practices to stay competitive in the evolving analytics landscape."
       ],
       "course_details": {
-        "session_1": [
+        "Introduction to Data Analytics with Excel": [
           {
-            "class": "Session 1: Introduction to Data Analytics with Excel",
+            "class": "Introduction to Data Analytics with Excel",
             "topics": [
               "What is Data Analytics & its role in business",
               "Overview of Excel interface & navigation",
@@ -745,9 +745,9 @@
             ]
           }
         ],
-        "session_2": [
+        "Excel Formulas and Dashboard Essentials": [
           {
-            "class": "Session 2: Excel Formulas and Dashboard Essentials",
+            "class": "Excel Formulas and Dashboard Essentials",
             "topics": [
               "Logical functions: IF, AND, OR",
               "Lookup functions: VLOOKUP, HLOOKUP, INDEX-MATCH",
@@ -757,9 +757,9 @@
             ]
           }
         ],
-        "session_3": [
+        "Data Visualization with Excel": [
           {
-            "class": "Session 3: Data Visualization with Excel",
+            "class": "Data Visualization with Excel",
             "topics": [
               "Chart types: bar, line, pie, scatter etc.",
               "Customizing charts (labels, legends, colors)",
@@ -769,9 +769,9 @@
             ]
           }
         ],
-        "session_4": [
+        "Database, Data Analytics and Business Intelligence": [
           {
-            "class": "Session 4: Database, Data Analytics and Business Intelligence",
+            "class": "Database, Data Analytics and Business Intelligence",
             "topics": [
               "What is a database; relational vs non-relational",
               "Data warehouse & BI overview",
@@ -781,9 +781,9 @@
             ]
           }
         ],
-        "session_5": [
+        "DATABASE CONCEPTS AND SQL": [
           {
-            "class": "Session 5: DATABASE CONCEPTS AND SQL",
+            "class": "DATABASE CONCEPTS AND SQL",
             "topics": [
               "Data models: tables, keys, normalization",
               "Database schema design",
@@ -793,9 +793,9 @@
             ]
           }
         ],
-        "session_6": [
+        "SQL BASICS": [
           {
-            "class": "Session 6: SQL BASICS",
+            "class": "SQL BASICS",
             "topics": [
               "Basic SELECT statements",
               "WHERE filters, ORDER BY, LIMIT",
@@ -805,9 +805,9 @@
             ]
           }
         ],
-        "session_7": [
+        "ADVANCED SQL": [
           {
-            "class": "Session 5-7: ADVANCED SQL",
+            "class": "ADVANCED SQL",
             "topics": [
               "Subqueries & nested SELECTs",
               "Window functions (ROW_NUMBER, RANK, LEAD, LAG)",
@@ -817,7 +817,7 @@
             ]
           }
         ],
-        "session_8": [
+        "BUILDING SMART VISUALS FROM YOUR DATA": [
           {
             "class": "BUILDING SMART VISUALS FROM YOUR DATA",
             "topics": [
@@ -829,9 +829,9 @@
             ]
           }
         ],
-        "session_9": [
+        "CONTROL FLOW AND LOOPING": [
           {
-            "class": "Session 9: CONTROL FLOW AND LOOPING",
+            "class": "CONTROL FLOW AND LOOPING",
             "topics": [
               "Programming basics in Python: variables, control flow",
               "If‑else, for loops, while loops",
@@ -841,9 +841,9 @@
             ]
           }
         ],
-        "session_10": [
+        "CONTINUE WITH PYTHON": [
           {
-            "class": "Session 10: CONTINUE WITH PYTHON",
+            "class": "CONTINUE WITH PYTHON",
             "topics": [
               "Deep dive into Python environment (Jupyter Notebooks, IDEs)",
               "Data types, collections, built‑in functions",
@@ -853,9 +853,9 @@
             ]
           }
         ],
-        "session_11": [
+        "File Handling and Libraries": [
           {
-            "class": "Session 11: File Handling and Libraries",
+            "class": "File Handling and Libraries",
             "topics": [
               "Reading and writing files: CSV, JSON, Excel",
               "Working with OS file paths",
@@ -865,9 +865,9 @@
             ]
           }
         ],
-        "session_12": [
+        "Web Scraping": [
           {
-            "class": "Session 12: Web Scraping",
+            "class": "Web Scraping",
             "topics": [
               "What is web scraping; ethical & legal considerations",
               "Using requests/HTTP libraries",
@@ -877,9 +877,9 @@
             ]
           }
         ],
-        "session_13": [
+        "Data Analysis with Python": [
           {
-            "class": "Session 13: Data Analysis with Python",
+            "class": "Data Analysis with Python",
             "topics": [
               "Exploratory Data Analysis (EDA) steps",
               "Statistical summaries (mean, median, dispersion)",
@@ -889,9 +889,9 @@
             ]
           }
         ],
-        "session_14": [
+        "Data Visualization with Python": [
           {
-            "class": "Session 14: Data Visualization with Python",
+            "class": "Data Visualization with Python",
             "topics": [
               "Plotting with Matplotlib & Seaborn",
               "Creating multiple plot types: histograms, box plots, scatter, heatmap",
@@ -901,9 +901,9 @@
             ]
           }
         ],
-        "session_15": [
+        "AI and Machine Learning with Python": [
           {
-            "class": "Session 15: AI and Machine Learning with Python",
+            "class": "AI and Machine Learning with Python",
             "topics": [
               "Introduction to machine learning: supervised vs unsupervised",
               "Regression (linear, logistic)",
@@ -913,9 +913,9 @@
             ]
           }
         ],
-        "session_16": [
+        "SUPPLEMENTARY SESSIONS: PYTHON, SQL PROJECTS & CAREER DEVELOPMENT SUPPORT": [
           {
-            "class": "Session 16: SUPPLEMENTARY SESSIONS: PYTHON, SQL PROJECTS & CAREER DEVELOPMENT SUPPORT",
+            "class": "SUPPLEMENTARY SESSIONS: PYTHON, SQL PROJECTS & CAREER DEVELOPMENT SUPPORT",
             "topics": [
               "Capstone project: end‑to‑end implementation (Excel, SQL, Python)",
               "Real‑world dataset project & presentation",
