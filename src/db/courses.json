@@ -2,12 +2,13 @@
   "courses": [
     {
       "title": "Full Stack QA Engineering",
-      "subtitle":"Manual + automation + frameworks — everything from basics to advanced testing tools.",
+      "subtitle": "Manual + automation + frameworks — everything from basics to advanced testing tools.",
       "weeks": "16 Weeks",
       "status": "Enrollment Ongoing",
-      "img":"/programs-offer/program-1.webp",
-      "img_banner":"/course-details-banner/banner-1.webp",
-      "description": "Full Stack QA Engineering This program is designed to provide complete QA Engineering training, covering both manual and automated testing from beginner to advanced levels. Students will gain hands-on experience in continuous test automation using the Cucumber Test Automation Framework with Java and Selenium. The course also focuses on Agile/Scrum methodologies, ensuring learners understand industry best practices.",
+      "img": "/programs-offer/program-1.webp",
+      "img_banner": "/course-details-banner/banner-1.webp",
+      "description": "This program is designed to provide complete QA Engineering training, covering both manual and automated testing from beginner to advanced levels. Students will gain hands-on experience in continuous test automation using the Cucumber Test Automation Framework with Java and Selenium. The course also focuses on Agile/Scrum methodologies, ensuring learners understand industry best practices.",
+      "overview_description": "QA engineers with full stack testing expertise are in high demand in today’s tech-driven world. This course equips you with the skills to ensure product quality and reliability across all stages of development.",
       "course_structure_overview": {
         "student_dashboard": "Each student receives a personalized dashboard to track classes, study materials, and progress throughout the course.",
         "online_live_classes": "Attend interactive live classes online from the comfort of your home, with opportunities to engage and ask questions in real time.",
@@ -26,7 +27,6 @@
         "1100+ Successful Graduates"
       ],
       "what_you_will_learn": [
-        "QA engineers with full stack testing expertise are in high demand in today’s tech-driven world. This course equips you with the skills to ensure product quality and reliability across all stages of development.",
         "QA Fundamentals – Build a strong foundation in QA principles and learn to design effective testing strategies that enhance software quality.",
         "Manual Testing – Understand core manual testing techniques to detect and resolve bugs early in the development cycle.",
         "Automation Testing – Master automation with Selenium and JUnit, streamlining repetitive tests for efficiency and consistency.",
@@ -39,55 +39,160 @@
       ],
       "course_details": {
         "manual_testing": [
-          "Class 1: Software Development Life Cycle (SDLC) Phases of SDLC (Requirement, Design, Development, Testing, Deployment, Maintenance)   Waterfall vs Agile vs Iterative models   Role of QA in different SDLC phases",
-          "Class 2: Software Testing Life Cycle (STLC) Requirement analysis, Test planning, Test case design, Environment setup   Test execution and defect reporting   Test closure activities",
-          "Class 3: Different Types of Testing Practice Unit, Integration, System, Regression, UAT   Functional vs Non-functional testing   Smoke, Sanity, Exploratory testing",
-          "Class 4: Agile Software Development Model Agile principles & manifesto   Scrum framework (roles, ceremonies, artifacts)   QA’s role in Agile teams"
+          {
+            "class": "Class 1: Software Development Life Cycle (SDLC)",
+            "topics": [
+              "Phases of SDLC (Requirement, Design, Development, Testing, Deployment, Maintenance)",
+              "Waterfall vs Agile vs Iterative models",
+              "Role of QA in different SDLC phases"
+            ]
+          },
+          {
+            "class": "Class 2: Software Testing Life Cycle (STLC)",
+            "topics": [
+              "Requirement analysis, Test planning, Test case design, Environment setup",
+              "Test execution and defect reporting",
+              "Test closure activities"
+            ]
+          },
+          {
+            "class": "Class 3: Different Types of Testing Practice",
+            "topics": [
+              "Unit, Integration, System, Regression, UAT",
+              "Functional vs Non-functional testing",
+              "Smoke, Sanity, Exploratory testing"
+            ]
+          },
+          {
+            "class": "Class 4: Agile Software Development Model",
+            "topics": [
+              "Agile principles & manifesto",
+              "Scrum framework (roles, ceremonies, artifacts)",
+              "QA’s role in Agile teams"
+            ]
+          }
         ],
         "jira": [
-          "JIRA (Project Management/Defect Tracking Software)",
-          "Class 5: Using JIRA for Test Case Writing & Defect Writing Creating epics, stories, tasks   Writing test cases in JIRA   Logging and tracking defects",
-          "Class 6: Behavioral Driven Development (BDD) and CI/CD Gherkin syntax for BDD scenarios   Writing feature files   Integrating BDD with CI/CD pipelines"
+          {
+            "class": "Class 5: Jira – Introduction",
+            "topics": [
+              "Jira project setup",
+              "Creating and managing issues",
+              "Bug reporting best practices"
+            ]
+          },
+          {
+            "class": "Class 6: Jira – Agile Boards",
+            "topics": [
+              "Scrum vs Kanban boards",
+              "Tracking sprint progress",
+              "Backlog grooming"
+            ]
+          }
         ],
         "database_and_sql": [
-          "Class 7: Getting Started with Database and SQL Database basics, relational models   SQL syntax, SELECT queries   Filtering with WHERE, ORDER BY",
-          "Class 8: SQL – Intermediate Joins (INNER, LEFT, RIGHT, FULL)   Grouping with GROUP BY & HAVING   Subqueries",
-          "Class 9: SQL – Advanced Stored procedures, functions   Triggers, indexing, optimization   Transactions and constraints"
+          {
+            "class": "Class 7: Database Concepts",
+            "topics": [
+              "Relational database basics",
+              "Primary & foreign keys",
+              "ER diagrams"
+            ]
+          },
+          {
+            "class": "Class 8: SQL Queries",
+            "topics": [
+              "SELECT, INSERT, UPDATE, DELETE",
+              "Joins (INNER, LEFT, RIGHT, FULL)",
+              "Aggregate functions"
+            ]
+          },
+          {
+            "class": "Class 9: Database Testing",
+            "topics": [
+              "Data validation",
+              "Stored procedures & triggers",
+              "Testing database constraints"
+            ]
+          }
         ],
         "api_testing": [
-          "Class 10: API Basics & Tools REST principles, HTTP methods (GET, POST, PUT, DELETE)   Status codes, headers, request/response format",
-          "Class 11: API Testing with Postman & Automation Writing test cases in Postman   Validating response payloads and schemas   Automating API tests & integrating with CI/CD"
+          {
+            "class": "Class 10: API Testing Basics",
+            "topics": [
+              "Understanding APIs (REST vs SOAP)",
+              "HTTP methods (GET, POST, PUT, DELETE)",
+              "API documentation (Swagger, Postman)"
+            ]
+          },
+          {
+            "class": "Class 11: Postman for API Testing",
+            "topics": [
+              "Creating collections",
+              "Parameterization",
+              "Automating API tests"
+            ]
+          },
+          {
+            "class": "Class 12: Advanced API Testing",
+            "topics": [
+              "Authentication (OAuth, JWT)",
+              "API test environments",
+              "Integrating API tests into CI/CD"
+            ]
+          }
         ],
-        "test_automation": [
-          "Class 12: Test Automation Fundamentals Why automation? ROI of automation   Test automation strategy",
-          "Class 13–16: Java Basics (Java 01–04) Variables, data types, operators   Control structures (loops, conditions)   OOP concepts (classes, objects, inheritance, polymorphism)   Exception handling, collections framework",
-          "Class 17: Getting Started with Selenium Selenium WebDriver setup   Browser automation basics",
-          "Class 18: Object Locators in Selenium XPath, CSS Selectors, ID, Name, LinkText   Dynamic locators",
-          "Class 19: Synchronization, Alert Handling & Cross-Browser Testing Implicit vs Explicit waits   Handling alerts, frames, pop-ups   Running tests on multiple browsers",
-          "Class 20: TestNG Framework Annotations, Test suites   Data-driven testing with TestNG",
-          "Class 21: Maven & Keyword-Driven Framework Build management with Maven   Designing keyword-driven frameworks",
-          "Class 22: Advanced Cucumber Framework with Selenium Step definitions, hooks   Scenario outline & parameterization",
-          "Class 23: BDD & Code Version Control with GitHub BDD advanced practices   Using Git/GitHub for test versioning",
-          "Class 24: Page Object Model (POM) Designing reusable test scripts   Implementing POM pattern",
-          "Class 25: Continuous Integration (CI/CD) with Jenkins Setting up Jenkins pipelines   Automating test execution in CI/CD",
-          "Class 26: Mobile App Testing with Appium & AWS + Performance Testing Appium setup for Android & iOS testing   Running tests on AWS Device Farm   JMeter for performance/load testing",
-          "Class 27: Selenium Grid Operation and Sauce Labs Distributed test execution with Selenium Grid   Cloud-based testing using Sauce Labs"
+        "automation_testing": [
+          {
+            "class": "Class 13: Automation Basics",
+            "topics": [
+              "Why automation testing?",
+              "Selenium WebDriver overview",
+              "Installing and configuring Selenium"
+            ]
+          },
+          {
+            "class": "Class 14: Selenium with Java",
+            "topics": [
+              "Locators (ID, XPath, CSS)",
+              "Handling dynamic elements",
+              "Assertions in test scripts"
+            ]
+          },
+          {
+            "class": "Class 15: Frameworks",
+            "topics": [
+              "JUnit & TestNG basics",
+              "Page Object Model",
+              "Data-driven testing"
+            ]
+          },
+          {
+            "class": "Class 16: CI/CD with Automation",
+            "topics": [
+              "Integrating Selenium with Jenkins",
+              "Running tests in pipelines",
+              "Generating test reports"
+            ]
+          }
         ]
       }
     },
+
     {
       "title": "Basic Computing Course",
-      "subtitle":"Threat detection, defense strategies, and hands-on security protocols.",
-      "weeks": "20 Weeks",
+      "subtitle": "Learn essential computer skills from scratch—hardware, Windows, applications, and networking.",
+      "weeks": "4 Weeks",
       "status": "Enrollment Ongoing",
-      "img":"/programs-offer/program-2.webp",
-      "img_banner":"/course-details-banner/banner-2.webp",
-      "description": "Basic Computing Course Get hands-on with computers—even if it’s your very first time! The Basic Computing Course at Transfotech Academy is designed for beginners, covering everything from understanding computer parts to navigating Windows, managing files, and connecting to the internet. With step-by-step lessons on organizing files, personalizing desktops, and using essential programs, you’ll build the confidence to work independently in any digital environment. This course is ideal for anyone new to technology or looking to refresh their computing skills, providing a strong foundation for success in today’s digital world.",
+      "img": "/programs-offer/program-2.webp",
+      "img_banner": "/course-details-banner/banner-2.webp",
+      "description": "Get hands-on with computers—even if it’s your very first time! The Basic Computing Course at Transfotech Academy is designed for beginners, covering everything from understanding computer parts to navigating Windows, managing files, and connecting to the internet. With step-by-step lessons on organizing files, personalizing desktops, and using essential programs, you’ll build the confidence to work independently in any digital environment. This course is ideal for anyone new to technology or looking to refresh their computing skills, providing a strong foundation for success in today’s digital world.",
+      "overview_description": "This course is designed for absolute beginners—perfect if you’ve never used a computer before. Even regular computer users will discover new skills and insights. It also serves as a prerequisite for advanced computer courses.",
       "course_structure_overview": {
         "hands_on_video_lectures": "Learn essential computer skills and Windows navigation through easy-to-follow video lessons.",
         "digital_guidebook": "Access a comprehensive guidebook with all the key resources you’ll need to strengthen your computing knowledge.",
         "dedicated_support_group": "Stay connected with peers, share experiences, and receive additional support and resources.",
-        "weekly_live_QA_classes": "Join live Zoom sessions with expert instructors to ask questions, solve problems, and reinforce learning."
+        "weekly_live_qa_classes": "Join live Zoom sessions with expert instructors to ask questions, solve problems, and reinforce learning."
       },
       "whats_included": [
         "220+ Successful Graduates",
@@ -97,7 +202,6 @@
         "Live Instructor Support"
       ],
       "what_you_will_learn": [
-        "This course is designed for absolute beginners—perfect if you’ve never used a computer before. Even regular computer users will discover new skills and insights. It also serves as a prerequisite for advanced computer courses.",
         "Understand computer hardware – Identify the physical components of a computer and their functions.",
         "Navigate Windows with confidence – Master personalization, settings, and desktop tools.",
         "Manage files and folders – Create, rename, move, and delete files efficiently.",
@@ -107,140 +211,721 @@
         "Explore Windows Explorer – Organize files with libraries and understand window structures.",
         "Apply practical exercises – Reinforce skills with hands-on practice for real-world readiness."
       ],
-      "details_about_the_course": [
-        "1. Introduction to Computers Understanding what a computer is and how it works   Hardware vs Software basics   Types of computers and their uses   Input and output devices",
-        "2. Getting Started Powering on/off safely   Logging in and out   Mouse and keyboard usage   Understanding desktop icons and taskbar",
-        "3. Windows 10 Operating System Features of Windows 10   Start menu, search bar, and settings   Customizing the desktop (themes, wallpapers, shortcuts)   Managing multiple windows and multitasking",
-        "4. Windows Explorer Navigating the file system   Understanding folders, drives, and libraries   Copying, moving, and deleting files   Using search and quick access",
-        "5. Files and Programs Creating, saving, and opening files   File extensions and their importance   Installing and uninstalling software   Opening and closing programs properly",
-        "6. Creating and Managing Folders Creating new folders and subfolders   Renaming and organizing folders   File path understanding   Best practices for digital organization",
-        "7. Peripheral Devices Connecting and using USB drives, printers, and scanners   Installing drivers   Safely ejecting removable devices   Troubleshooting basic peripheral issues",
-        "8. Networks Basics of networking (LAN, WAN, Wi-Fi)   Understanding servers and clients   Connecting to the internet   Safe browsing practices and cybersecurity basics"
-      ]
+      "course_details": {
+        "introduction_to_computers": [
+          {
+            "class": "Class 1: Introduction to Computers",
+            "topics": [
+              "Understanding what a computer is and how it works",
+              "Hardware vs Software basics",
+              "Types of computers and their uses",
+              "Input and output devices"
+            ]
+          }
+        ],
+        "getting_started": [
+          {
+            "class": "Class 2: Getting Started",
+            "topics": [
+              "Powering on/off safely",
+              "Logging in and out",
+              "Mouse and keyboard usage",
+              "Understanding desktop icons and taskbar"
+            ]
+          }
+        ],
+        "windows_os": [
+          {
+            "class": "Class 3: Windows 10 Operating System",
+            "topics": [
+              "Features of Windows 10",
+              "Start menu, search bar, and settings",
+              "Customizing the desktop (themes, wallpapers, shortcuts)",
+              "Managing multiple windows and multitasking"
+            ]
+          }
+        ],
+        "windows_explorer": [
+          {
+            "class": "Class 4: Windows Explorer",
+            "topics": [
+              "Navigating the file system",
+              "Understanding folders, drives, and libraries",
+              "Copying, moving, and deleting files",
+              "Using search and quick access"
+            ]
+          }
+        ],
+        "files_and_programs": [
+          {
+            "class": "Class 5: Files and Programs",
+            "topics": [
+              "Creating, saving, and opening files",
+              "File extensions and their importance",
+              "Installing and uninstalling software",
+              "Opening and closing programs properly"
+            ]
+          }
+        ],
+        "folders_management": [
+          {
+            "class": "Class 6: Creating and Managing Folders",
+            "topics": [
+              "Creating new folders and subfolders",
+              "Renaming and organizing folders",
+              "File path understanding",
+              "Best practices for digital organization"
+            ]
+          }
+        ],
+        "peripheral_devices": [
+          {
+            "class": "Class 7: Peripheral Devices",
+            "topics": [
+              "Connecting and using USB drives, printers, and scanners",
+              "Installing drivers",
+              "Safely ejecting removable devices",
+              "Troubleshooting basic peripheral issues"
+            ]
+          }
+        ],
+        "networks": [
+          {
+            "class": "Class 8: Networks",
+            "topics": [
+              "Basics of networking (LAN, WAN, Wi-Fi)",
+              "Understanding servers and clients",
+              "Connecting to the internet",
+              "Safe browsing practices and cybersecurity basics"
+            ]
+          }
+        ]
+      }
     },
+
     {
       "title": "Data Analytics & AI Program",
-      "subtitle":"From spreadsheets to machine learning — become a data-informed decision maker.",
+      "subtitle": "From spreadsheets to machine learning — become a data-informed decision maker.",
       "weeks": "16 Weeks",
       "status": "Registration Open",
-      "img":"/programs-offer/program-3.webp",
-      "img_banner":"/course-details-banner/banner-3.webp",
-      "description": "Data Analytics & AI Program Learn Excel, SQL, Python, and Tableau with hands-on projects, internship support, and career preparation.",
+      "img": "/programs-offer/program-3.webp",
+      "img_banner": "/course-details-banner/banner-3.webp",
+      "description": "Jumpstart your career with job-ready skills in analytics and AI. Whether you're new or experienced, learn Excel, SQL, Python & Tableau fast. Get hands-on, real-world training with built-in internship and placement guidance. This course simplifies the essentials of analytics and AI into an easy-to-follow, practical format",
+      "overview_description": "Data Analytics & AI skills — especially Python and SQL — are in high demand across sectors. This course empowers you to turn data into decisions and become a key player in data-driven teams.",
       "course_structure_overview": {
-        "portal": "Student portal with dashboard",
-        "live_classes": "Interactive online sessions",
-        "recordings": "Session recordings available",
-        "resume_support": "Yes",
-        "interview_prep": "Yes",
-        "enrollment": "Quick enrollment process"
+        "Student Portal Access": " Every learner receives a personal dashboard. It lets you easily manage your classes, track progress, and access course materials.",
+        "Live Online Sessions": "Attend the Data Analytics & AI program online at your convenience. All sessions are live and interactive for deeper learning.",
+        "Access to Class Recordings": "Missed a class? Don’t worry. You’ll have full access to session recordings so you can catch up anytime.",
+        "Professional Resume Support": " A sharp resume opens doors. Our course includes guidance to help you create a strong, targeted resume for data roles.",
+        "Job Interview Guidance": " Interviews are critical to landing the right job. We’ll prepare you with mock sessions, tips, and best practices.",
+        "Quick Enrollment Process": "Registering is simple and fast. Start your journey into Data Analytics & AI in just a few easy steps."
       },
       "whats_included": [
-        "16 Weeks of structured program",
-        "10+ Weekly commitment hours",
-        "Private peer community",
-        "Lifetime learning resources"
+        "Job-Driven Curriculum",
+        "16-Week Duration",
+        "Designed for Tech-Minded Learners",
+        "Minimum Weekly Commitment: 10 Hours",
+        "Private Online Peer Group Access",
+        "Unlimited Lifetime Learning Resources"
       ],
       "what_you_will_learn": [
-        "Analytics fundamentals",
-        "Python for data analysis & visualization",
-        "SQL for data management",
-        "Data cleaning & preparation",
-        "EDA and statistics",
-        "Visualization (Matplotlib, Seaborn)",
-        "Hands-on projects",
-        "AI tools & trends"
+        "Learn the fundamentals of analytics and how to align data with business goals",
+        "Use Python for manipulating, analyzing, and visualizing complex datasets",
+        "Master SQL to retrieve, manage, and analyze structured data from databases",
+        "Develop data-cleaning and preparation techniques for accurate analysis",
+        "Visualize insights clearly using Matplotlib, Seaborn, and more",
+        "Apply EDA (exploratory data analysis) to uncover patterns and trends",
+        "Use statistical methods to interpret and test real-world data",
+        "Build hands-on projects based on real industry challenges",
+        "Stay current with modern AI tools and trends shaping the analytics world"
       ],
-      "curriculum": [
-        "Excel basics, formulas, dashboards",
-        "Visualization in Excel",
-        "Databases & BI overview",
-        "SQL basics & advanced SQL",
-        "Python basics, control flow, file handling",
-        "Web scraping",
-        "Data analysis & visualization with Python",
-        "Intro to AI & ML",
-        "Capstone projects, resume, interview prep"
-      ],
-      "instructor": "Fuad Bin Saif"
+      "course_details": {
+        "session_1": [
+          {
+            "class": "Session 1: Introduction to Data Analytics with Excel",
+            "topics": [
+              "What is Data Analytics & its role in business",
+              "Overview of Excel interface & navigation",
+              "Understanding data types (numeric, text, date)",
+              "Basic functions: SUM, AVERAGE, COUNT, MIN, MAX",
+              "Data sorting & filtering fundamentals"
+            ]
+          }
+        ],
+        "session_2": [
+          {
+            "class": "Session 2: Excel Formulas and Dashboard Essentials",
+            "topics": [
+              "Logical functions: IF, AND, OR",
+              "Lookup functions: VLOOKUP, HLOOKUP, INDEX-MATCH",
+              "Named ranges, absolute vs relative references",
+              "Design and layout of dashboards: best practices",
+              "KPIs, metrics & interactive dashboard elements"
+            ]
+          }
+        ],
+        "session_3": [
+          {
+            "class": "Session 3: Data Visualization with Excel",
+            "topics": [
+              "Chart types: bar, line, pie, scatter etc.",
+              "Customizing charts (labels, legends, colors)",
+              "Conditional formatting & sparklines",
+              "PivotTables & PivotCharts for summarization",
+              "Dashboard storytelling: using visuals to convey insights"
+            ]
+          }
+        ],
+        "session_4": [
+          {
+            "class": "Session 4: Database, Data Analytics and Business Intelligence",
+            "topics": [
+              "What is a database; relational vs non-relational",
+              "Data warehouse & BI overview",
+              "ETL basics: extract, transform, load",
+              "Business intelligence tools & reporting needs",
+              "Use cases: Retention analytics, sales dashboards etc."
+            ]
+          }
+        ],
+        "session_5": [
+          {
+            "class": "Session 5: DATABASE CONCEPTS AND SQL",
+            "topics": [
+              "Data models: tables, keys, normalization",
+              "Database schema design",
+              "Primary/foreign keys, constraints",
+              "Types of joins (inner, left, right, full)",
+              "SQL tools & environments setup"
+            ]
+          }
+        ],
+        "session_6": [
+          {
+            "class": "Session 6: SQL BASICS",
+            "topics": [
+              "Basic SELECT statements",
+              "WHERE filters, ORDER BY, LIMIT",
+              "Basic aggregation: COUNT, SUM, AVG, MIN, MAX",
+              "GROUP BY & HAVING clauses",
+              "Handling nulls & basic error checking"
+            ]
+          }
+        ],
+        "session_7": [
+          {
+            "class": "Session 5-7: ADVANCED SQL",
+            "topics": [
+              "Subqueries & nested SELECTs",
+              "Window functions (ROW_NUMBER, RANK, LEAD, LAG)",
+              "Common Table Expressions (CTEs)",
+              "Case statements & conditional logic in SQL",
+              "Performance tuning basics & indexing"
+            ]
+          }
+        ],
+        "session_8": [
+          {
+            "class": "BUILDING SMART VISUALS FROM YOUR DATA",
+            "topics": [
+              "Mapping data‑visualization tools to business questions",
+              "Using BI tools/dashboards (Excel, Power BI, Tableau optional)",
+              "Interactive visuals: slicers, filters",
+              "Designing dashboards for mobile & desktop",
+              "Visual best practices: color theory, layout, clarity"
+            ]
+          }
+        ],
+        "session_9": [
+          {
+            "class": "Session 9: CONTROL FLOW AND LOOPING",
+            "topics": [
+              "Programming basics in Python: variables, control flow",
+              "If‑else, for loops, while loops",
+              "Functions & parameter passing",
+              "Iterating over data structures (lists, dictionaries)",
+              "Error handling & debugging"
+            ]
+          }
+        ],
+        "session_10": [
+          {
+            "class": "Session 10: CONTINUE WITH PYTHON",
+            "topics": [
+              "Deep dive into Python environment (Jupyter Notebooks, IDEs)",
+              "Data types, collections, built‑in functions",
+              "Modular coding – writing clean, reusable code",
+              "Working with external libraries/modules",
+              "Version control basics (optional intro to Git)"
+            ]
+          }
+        ],
+        "session_11": [
+          {
+            "class": "Session 11: File Handling and Libraries",
+            "topics": [
+              "Reading and writing files: CSV, JSON, Excel",
+              "Working with OS file paths",
+              "Using libraries: Pandas, NumPy basics",
+              "Dataframe operations: merge, concat, join",
+              "Handling missing data, duplicate removal"
+            ]
+          }
+        ],
+        "session_12": [
+          {
+            "class": "Session 12: Web Scraping",
+            "topics": [
+              "What is web scraping; ethical & legal considerations",
+              "Using requests/HTTP libraries",
+              "Parsing HTML with Beautiful Soup/lxml",
+              "Extracting structured data from websites",
+              "Saving scraped data for analysis"
+            ]
+          }
+        ],
+        "session_13": [
+          {
+            "class": "Session 13: Data Analysis with Python",
+            "topics": [
+              "Exploratory Data Analysis (EDA) steps",
+              "Statistical summaries (mean, median, dispersion)",
+              "Detecting outliers, missing values, anomalies",
+              "Correlation & covariance analysis",
+              "Feature engineering basics"
+            ]
+          }
+        ],
+        "session_14": [
+          {
+            "class": "Session 14: Data Visualization with Python",
+            "topics": [
+              "Plotting with Matplotlib & Seaborn",
+              "Creating multiple plot types: histograms, box plots, scatter, heatmap",
+              "Custom plot styling & themes",
+              "Subplots & figure layout management",
+              "Interactive visualizations (optional: Plotly or similar)"
+            ]
+          }
+        ],
+        "session_15": [
+          {
+            "class": "Session 15: AI and Machine Learning with Python",
+            "topics": [
+              "Introduction to machine learning: supervised vs unsupervised",
+              "Regression (linear, logistic)",
+              "Classification basics (e.g. decision trees, random forest)",
+              "Model evaluation metrics (accuracy, precision, recall, ROC-AUC)",
+              "Overfitting, underfitting, cross-validation"
+            ]
+          }
+        ],
+        "session_16": [
+          {
+            "class": "Session 16: SUPPLEMENTARY SESSIONS: PYTHON, SQL PROJECTS & CAREER DEVELOPMENT SUPPORT",
+            "topics": [
+              "Capstone project: end‑to‑end implementation (Excel, SQL, Python)",
+              "Real‑world dataset project & presentation",
+              "Resume workshops, portfolio building",
+              "Mock interviews & job prep",
+              "Guidance on career paths, job market & networking"
+            ]
+          }
+        ]
+      }
     },
+
     {
       "title": "Cybersecurity Engineering: Infused with Generative AI",
-      "subtitle":"Learn how AI works, where it’s going, and how to start using it now.",
-      "weeks": "12 Weeks",
-      "status": "Enrollment Open",
-      "img":"/programs-offer/program-4.webp",
-      "img_banner":"/course-details-banner/banner-4.webp",
-      "description": "Cybersecurity Engineering: Infused with Generative AI Hands-on cybersecurity training covering red team, blue team, AI-assisted tools, web security, and CTF challenges.",
+      "subtitle": "From spreadsheets to machine learning — become a data-informed decision maker.",
+      "weeks": "16 Weeks",
+      "status": "Registration Open",
+      "img": "/programs-offer/program-4.webp",
+      "img_banner": "/course-details-banner/banner-3.webp",
+      "description": "Stay ahead of the curve with real-world cybersecurity skills designed for today’s AI-powered threat landscape. Whether you're entering the field or upskilling, this course prepares you for offensive and defensive security — with hands-on labs, industry tools, and expert instruction.",
+      "overview_description": "Cybersecurity Engineering with Generative AI equips you with the most up-to-date tools, frameworks, and techniques used by cybersecurity professionals today.",
+      "course_structure_overview": [
+        "Build deep expertise in penetration testing, threat detection, and security architecture.",
+        "Attend the Data Analytics & AI program online at your convenience. All sessions are live and interactive for deeper learning.",
+        "Missed a class? Don’t worry. You’ll have full access to session recordings so you can catch up anytime.",
+        "A sharp resume opens doors. Our course includes guidance to help you create a strong, targeted resume for data roles.",
+        "Interviews are critical to landing the right job. We’ll prepare you with mock sessions, tips, and best practices.",
+        "Registering is simple and fast. Start your journey into Data Analytics & AI in just a few easy steps."
+      ],
       "whats_included": [
-        "92+ Alumni",
-        "80+ Hours Training",
-        "Study Guides",
-        "Weekly Quizzes",
-        "Live QA",
-        "Peer Community",
-        "Lifetime Access"
+        "92+ Successful Alumni",
+        "80+ Hours of Live Online Training",
+        "Comprehensive Study Guides & Notes",
+        "Weekly Quizzes for Practical Skill Testing",
+        "Live Q&A and Troubleshooting with Industry Pros",
+        "Private Online Peer & Mentor Community",
+        "Lifetime Access to All Course Resources"
       ],
       "what_you_will_learn": [
-        "Attacker vs defender strategies",
-        "System & OS security",
-        "Network security",
-        "Offensive security (red team)",
-        "Defensive security (blue team, SIEM)",
-        "Generative AI for cybersecurity",
-        "Web app security & bug bounty",
-        "CTF challenges & labs",
-        "OSINT investigations",
-        "Career preparation"
+        "Think Like a Security Professional: Grasp attacker vs defender strategies, risk models, the CIA triad, and the principles that shape cybersecurity today.",
+        "System & OS Security: Gain hands-on skills in Linux (Kali) and Windows environments, plus security scripting and asset management.",
+        "Master Network Security: Learn firewalls, encryption, IDS/IPS, traffic analysis with Wireshark, and VPN configuration.",
+        "Offensive Security Skills (Red Team): Ethically exploit systems using tools like Metasploit and Burp Suite. Understand OWASP Top 10, social engineering, and vulnerability scanning.",
+        "Defensive Security (Blue Team): Detect, monitor, and respond to threats using SIEM tools like Splunk. Dive into forensic analysis and incident response workflows.",
+        "Generative AI for Cybersecurity: Leverage ChatGPT, PentesterGPT, and other AI tools to generate test cases, automate reconnaissance, and analyze threats.",
+        "Web Security & Bug Bounty Fundamentals: Test web applications, report vulnerabilities, and participate in real-world bug bounty programs.",
+        "Real-World Projects & CTF Challenges: Practice with Capture The Flag exercises on TryHackMe and Hack The Box. Build a portfolio to show off your skills.",
+        "Career Preparation: Get support with certification planning (e.g. OSCP), freelance gig setup, and job application strategy."
       ],
-      "modules": "10",
-      "instructor": "Fuad Bin Saif"
+      "course_details": {
+        "session_1": [
+          {
+            "class": "Session 1: Cybersecurity Foundations & Core Principles",
+            "topics": [
+              "Threat Landscape Overview (types of threats, attacker motivations)",
+              "CIA Triad & Security Goals (Confidentiality, Integrity, Availability)",
+              "Risk Assessment & Risk Management Basics",
+              "Security Policies, Standards & Compliance (GDPR, ISO, NIST, etc.)",
+              "Human Factors & Social Engineering"
+            ]
+          }
+        ],
+        "session_2": [
+          {
+            "class": "Session 2: Operating Systems, Asset Management & System Security",
+            "topics": [
+              "OS Internals (Windows, Linux, macOS architecture)",
+              "Patch Management & System Hardening",
+              "Endpoint Security (antivirus, EDR, host‑based firewalls)",
+              "Asset Inventory & Configuration Management",
+              "Secure Boot, Trusted Execution, and privilege management"
+            ]
+          }
+        ],
+        "session_3": [
+          {
+            "class": "Session 3: Networking Fundamentals & Network Security",
+            "topics": [
+              "Networking Fundamentals (TCP/IP, OSI model, routing, switching)",
+              "Network Protocols & Vulnerabilities (DNS, ARP, DHCP, etc.)",
+              "Firewalls, NAT, VPNs & Secure Remote Access",
+              "Intrusion Detection / Prevention Systems (IDS/IPS)",
+              "Network Monitoring & Traffic Analysis"
+            ]
+          }
+        ],
+        "session_4": [
+          {
+            "class": "Session 4: Red Team Operations – Offensive Security Tactics",
+            "topics": [
+              "Reconnaissance & Footprinting (passive & active)",
+              "Vulnerability Scanning & Enumeration",
+              "Exploitation Techniques (e.g. buffer overflows, injection attacks)",
+              "Privilege Escalation & Post‑exploitation",
+              "Attack Chains & Pivoting"
+            ]
+          }
+        ],
+        "session_5": [
+          {
+            "class": "Session 5: Blue Team Operations – Defensive Security Strategies",
+            "topics": [
+              "Incident Response Lifecycle & Forensics Basics",
+              "Log Management & SIEM (Security Information and Event Management)",
+              "Threat Detection & Alert Triage",
+              "Security Controls & Mitigation Strategies",
+              "Defense in Depth & Network Segmentation"
+            ]
+          }
+        ],
+        "session_6": [
+          {
+            "class": "Session 6: Generative AI for Cybersecurity Operations",
+            "topics": [
+              "Overview of Generative AI & LLMs in Security",
+              "AI‑Assisted Threat Intelligence & Anomaly Detection",
+              "Automating Defensive Tasks with AI (e.g., alert classification, log summarization)",
+              "Risks & Ethical Considerations of AI in Security",
+              "Integrating AI Tools into Security Operations"
+            ]
+          }
+        ],
+        "session_7": [
+          {
+            "class": "Session 7: Web Application Security & Bug Bounty Hunting",
+            "topics": [
+              "Web Protocols & OWASP Top Ten (e.g. Injection, XSS, CSRF)",
+              "Secure Coding Practices (input validation, sessions, authentication)",
+              "Testing Tools & Methods (burp suite, scanners, manual testing)",
+              "Bug Bounty Program Processes & Reporting",
+              "Responsible Disclosure & Legal Boundaries"
+            ]
+          }
+        ],
+        "session_8": [
+          {
+            "class": "Capture the Flag (CTF) Challenges & Practical Labs",
+            "topics": [
+              "Setting up Lab Environments (VMs, containers, networks)",
+              "Common CTF Categories (crypto, reverse engineering, web, binary exploitation)",
+              "Team Strategy & Time Management in CTFs",
+              "Real‑world Scenario Simulations",
+              "Reviewing & Learning from Write‑ups"
+            ]
+          }
+        ],
+        "session_9": [
+          {
+            "class": "Session 9: Open Source Intelligence (OSINT) & Cyber Investigations",
+            "topics": [
+              "OSINT Tools & Techniques (search engines, social media profiling, metadata, domain research)",
+              "Data Validation & Source Credibility",
+              "Privacy & Ethical Constraints in OSINT",
+              "Case‐Study‑based Investigation Workflows",
+              "Reporting & Presentation of Findings"
+            ]
+          }
+        ],
+        "session_10": [
+          {
+            "class": "Session 10: Capstone Projects & Career Preparation",
+            "topics": [
+              "Designing a Full Security Project (from planning to documentation)",
+              "Simulating Red vs Blue Exercises / Attack vs Defense Scenarios",
+              "Building a Security Portfolio (reports, labs, CTF wins)",
+              "Interview Prep & Mock Assessments (technical + behavioral)",
+              "Resume & LinkedIn Tailoring for Cybersecurity Roles"
+            ]
+          }
+        ]
+      }
     },
+
     {
       "title": "Business & Data Analytics: Enhanced with AI",
-      "subtitle":"A complete foundation for tech beginners. Get the basics, get confident.",
-      "weeks": "12 Weeks",
-      "status": "Admission in Progress",
-      "img":"/programs-offer/program-5.webp",
-      "img_banner":"/course-details-banner/banner-5.webp",
-      "description": "Business & Data Analytics: Enhanced with AI Practical training in business analytics, SQL, Python, and visualization with AI integration, career prep, and projects.",
+      "subtitle": "From spreadsheets to machine learning — become a data-informed decision maker.",
+      "weeks": "16 Weeks",
+      "status": "Registration Open",
+      "img": "/programs-offer/program-5.webp",
+      "img_banner": "/course-details-banner/banner-3.webp",
+      "description": "Launch your career with high-demand skills in analytics and AI. Ideal for both newcomers and professionals—quickly gain mastery in Excel, SQL, Python & Tableau. Experience hands-on, real-world learning with internship and career placement support. This course delivers key business and data analytics concepts in a simple, practical way.",
+      "overview_description": "Business & Data Analytics: Enhanced with AI, combined with Python and SQL, is one of the most sought-after skill sets across industries. This course equips you with the tools to turn raw data into smart decisions — making you a key player in any data-driven team.",
       "course_structure_overview": {
-        "dashboard": "Yes",
-        "live_classes": "Yes",
-        "recordings": "Yes",
-        "resume_support": "Yes",
-        "interview_coaching": "Yes",
-        "enrollment": "Simple enrollment process"
+        "Student Dashboard": "Every student gets a personalized dashboard. It helps you stay on top of your classes, course materials, and progress throughout the program.",
+        "Live Online Classes": "Join our Business & Data Analytics: Enhanced with AI sessions from anywhere. Classes are live and interactive, giving you a real-time learning experience.",
+        "Class Recordings": "Missed a session? No problem. All classes are recorded, so you can revisit the content anytime and stay up to speed with the rest of the class.",
+        "Resume Support": "A well-crafted resume increases your chances of landing your dream job. Our training includes guidance to help you build a strong, professional resume.",
+        "Interview Coaching": "Interviews are key to securing a great job. School for Training offers personalized interview prep to help you feel confident and ready.",
+        "Simple Enrollment": "Signing up is quick and easy. This program is just a few clicks away — get started toward your career in data and analytics today."
       },
       "whats_included": [
-        "16 Weeks program",
-        "10+ Weekly hours",
-        "Community access",
-        "Unlimited resources"
+        "Job-Ready Skill Development",
+        "16-Week Program",
+        "Perfect for Aspiring Tech Professionals",
+        "At Least 10 Hours Weekly Commitment",
+        "Dedicated Online Peer Community",
+        "Unlimited Access to Learning Resources"
       ],
       "what_you_will_learn": [
-        "Analytics principles & business decisions",
-        "Python for data analysis & visualization",
-        "SQL mastery",
-        "Data cleaning & structuring",
-        "EDA techniques",
-        "Statistical methods",
-        "Visualization with Matplotlib/Seaborn",
-        "Industry projects",
-        "AI-integrated practices"
+        "Build a strong understanding of core analytics principles and learn how to use data to support strategic business decisions.",
+        "Use Python for hands-on data handling, analysis, and visualization — turning complex datasets into actionable insights.",
+        "Master SQL to access, manage, and analyze structured data efficiently through relational databases.",
+        "Learn to clean and structure raw data for meaningful analysis, ensuring quality and consistency in your work.",
+        "Create powerful data visualizations that clearly communicate key findings, using tools like Matplotlib and Seaborn.",
+        "Explore Exploratory Data Analysis (EDA) techniques to identify trends, anomalies, and relationships within data.",
+        "Apply foundational statistical methods to interpret data patterns, run hypothesis tests, and make informed decisions.",
+        "Work on real-world projects that simulate industry problems, giving you direct experience applying your skills.",
+        "Stay updated with current trends, tools, and AI-integrated practices to stay competitive in the evolving analytics landscape."
       ],
-      "curriculum": [
-        "Excel for analytics & dashboards",
-        "Visualization with Excel",
-        "Databases & BI overview",
-        "SQL basics & advanced SQL",
-        "Python basics, control flow",
-        "File handling, libraries",
-        "Web scraping",
-        "Data analysis & visualization in Python",
-        "Intro to AI & ML",
-        "Capstone project, resume, interview prep"
-      ],
-      "instructor": "Fuad Bin Saif"
+      "course_details": {
+        "session_1": [
+          {
+            "class": "Session 1: Introduction to Data Analytics with Excel",
+            "topics": [
+              "What is Data Analytics & its role in business",
+              "Overview of Excel interface & navigation",
+              "Understanding data types (numeric, text, date)",
+              "Basic functions: SUM, AVERAGE, COUNT, MIN, MAX",
+              "Data sorting & filtering fundamentals"
+            ]
+          }
+        ],
+        "session_2": [
+          {
+            "class": "Session 2: Excel Formulas and Dashboard Essentials",
+            "topics": [
+              "Logical functions: IF, AND, OR",
+              "Lookup functions: VLOOKUP, HLOOKUP, INDEX-MATCH",
+              "Named ranges, absolute vs relative references",
+              "Design and layout of dashboards: best practices",
+              "KPIs, metrics & interactive dashboard elements"
+            ]
+          }
+        ],
+        "session_3": [
+          {
+            "class": "Session 3: Data Visualization with Excel",
+            "topics": [
+              "Chart types: bar, line, pie, scatter etc.",
+              "Customizing charts (labels, legends, colors)",
+              "Conditional formatting & sparklines",
+              "PivotTables & PivotCharts for summarization",
+              "Dashboard storytelling: using visuals to convey insights"
+            ]
+          }
+        ],
+        "session_4": [
+          {
+            "class": "Session 4: Database, Data Analytics and Business Intelligence",
+            "topics": [
+              "What is a database; relational vs non-relational",
+              "Data warehouse & BI overview",
+              "ETL basics: extract, transform, load",
+              "Business intelligence tools & reporting needs",
+              "Use cases: Retention analytics, sales dashboards etc."
+            ]
+          }
+        ],
+        "session_5": [
+          {
+            "class": "Session 5: DATABASE CONCEPTS AND SQL",
+            "topics": [
+              "Data models: tables, keys, normalization",
+              "Database schema design",
+              "Primary/foreign keys, constraints",
+              "Types of joins (inner, left, right, full)",
+              "SQL tools & environments setup"
+            ]
+          }
+        ],
+        "session_6": [
+          {
+            "class": "Session 6: SQL BASICS",
+            "topics": [
+              "Basic SELECT statements",
+              "WHERE filters, ORDER BY, LIMIT",
+              "Basic aggregation: COUNT, SUM, AVG, MIN, MAX",
+              "GROUP BY & HAVING clauses",
+              "Handling nulls & basic error checking"
+            ]
+          }
+        ],
+        "session_7": [
+          {
+            "class": "Session 5-7: ADVANCED SQL",
+            "topics": [
+              "Subqueries & nested SELECTs",
+              "Window functions (ROW_NUMBER, RANK, LEAD, LAG)",
+              "Common Table Expressions (CTEs)",
+              "Case statements & conditional logic in SQL",
+              "Performance tuning basics & indexing"
+            ]
+          }
+        ],
+        "session_8": [
+          {
+            "class": "BUILDING SMART VISUALS FROM YOUR DATA",
+            "topics": [
+              "Mapping data‑visualization tools to business questions",
+              "Using BI tools/dashboards (Excel, Power BI, Tableau optional)",
+              "Interactive visuals: slicers, filters",
+              "Designing dashboards for mobile & desktop",
+              "Visual best practices: color theory, layout, clarity"
+            ]
+          }
+        ],
+        "session_9": [
+          {
+            "class": "Session 9: CONTROL FLOW AND LOOPING",
+            "topics": [
+              "Programming basics in Python: variables, control flow",
+              "If‑else, for loops, while loops",
+              "Functions & parameter passing",
+              "Iterating over data structures (lists, dictionaries)",
+              "Error handling & debugging"
+            ]
+          }
+        ],
+        "session_10": [
+          {
+            "class": "Session 10: CONTINUE WITH PYTHON",
+            "topics": [
+              "Deep dive into Python environment (Jupyter Notebooks, IDEs)",
+              "Data types, collections, built‑in functions",
+              "Modular coding – writing clean, reusable code",
+              "Working with external libraries/modules",
+              "Version control basics (optional intro to Git)"
+            ]
+          }
+        ],
+        "session_11": [
+          {
+            "class": "Session 11: File Handling and Libraries",
+            "topics": [
+              "Reading and writing files: CSV, JSON, Excel",
+              "Working with OS file paths",
+              "Using libraries: Pandas, NumPy basics",
+              "Dataframe operations: merge, concat, join",
+              "Handling missing data, duplicate removal"
+            ]
+          }
+        ],
+        "session_12": [
+          {
+            "class": "Session 12: Web Scraping",
+            "topics": [
+              "What is web scraping; ethical & legal considerations",
+              "Using requests/HTTP libraries",
+              "Parsing HTML with Beautiful Soup/lxml",
+              "Extracting structured data from websites",
+              "Saving scraped data for analysis"
+            ]
+          }
+        ],
+        "session_13": [
+          {
+            "class": "Session 13: Data Analysis with Python",
+            "topics": [
+              "Exploratory Data Analysis (EDA) steps",
+              "Statistical summaries (mean, median, dispersion)",
+              "Detecting outliers, missing values, anomalies",
+              "Correlation & covariance analysis",
+              "Feature engineering basics"
+            ]
+          }
+        ],
+        "session_14": [
+          {
+            "class": "Session 14: Data Visualization with Python",
+            "topics": [
+              "Plotting with Matplotlib & Seaborn",
+              "Creating multiple plot types: histograms, box plots, scatter, heatmap",
+              "Custom plot styling & themes",
+              "Subplots & figure layout management",
+              "Interactive visualizations (optional: Plotly or similar)"
+            ]
+          }
+        ],
+        "session_15": [
+          {
+            "class": "Session 15: AI and Machine Learning with Python",
+            "topics": [
+              "Introduction to machine learning: supervised vs unsupervised",
+              "Regression (linear, logistic)",
+              "Classification basics (e.g. decision trees, random forest)",
+              "Model evaluation metrics (accuracy, precision, recall, ROC-AUC)",
+              "Overfitting, underfitting, cross-validation"
+            ]
+          }
+        ],
+        "session_16": [
+          {
+            "class": "Session 16: SUPPLEMENTARY SESSIONS: PYTHON, SQL PROJECTS & CAREER DEVELOPMENT SUPPORT",
+            "topics": [
+              "Capstone project: end‑to‑end implementation (Excel, SQL, Python)",
+              "Real‑world dataset project & presentation",
+              "Resume workshops, portfolio building",
+              "Mock interviews & job prep",
+              "Guidance on career paths, job market & networking"
+            ]
+          }
+        ]
+      }
     }
   ]
 }

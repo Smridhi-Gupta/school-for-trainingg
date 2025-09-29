@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { CheckCircle, Wrench, Users } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import { useParams } from "next/navigation";
 import {
   Accordion,
@@ -33,24 +33,12 @@ const Details = () => {
         module,
         topics,
       }))
-    : course.curriculum
-    ? course.curriculum.map((item, idx) => ({
-        module: `Topic ${idx + 1}`,
-        topics: [item],
-      }))
-    : course.modules
-    ? Array.from({ length: parseInt(course.modules) }, (_, idx) => ({
-        module: `Module ${idx + 1}`,
-        topics: ["Details coming soon"],
-      }))
     : [];
 
-  // Handle instructor data
   const instructors = course.instructor
     ? [{ name: course.instructor, role: "Lead Instructor" }]
     : [{ name: "TBA", role: "Instructor to be announced" }];
 
-  // Handle course structure overview
   const courseStructure = course.course_structure_overview
     ? Object.entries(course.course_structure_overview).map(([key, value]) => ({
         key: key.replace(/_/g, " ").toUpperCase(),
@@ -60,13 +48,10 @@ const Details = () => {
 
   return (
     <div className="bg-gray-100 text-gray-900">
-
-      
       {/* Hero Section */}
       <section className="relative bg-gray-100 py-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 gap-12">
           <div className="flex-1 max-w-xl">
-            {/* ✅ Status text */}
             <p className="text-gray-400 font-semibold uppercase tracking-wide mb-2">
               {course.status}
             </p>
@@ -86,7 +71,6 @@ const Details = () => {
             </div>
           </div>
 
-          {/* Image Section */}
           <div className="flex-1 flex justify-center">
             <div className="relative w-[600px] h-[450px]">
               <Image
@@ -101,17 +85,7 @@ const Details = () => {
         </div>
       </section>
 
-      {/* Overview */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6 md:px-12">
-          <div className="p-8 border rounded-xl shadow-md hover:shadow-lg transition text-center">
-            <h2 className="text-3xl font-bold mb-6">Course Overview</h2>
-            <p className="text-md text-gray-600">{course.description}</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Course Structure Overview */}
+      {/* Structure */}
       {courseStructure.length > 0 && (
         <section className="py-10 bg-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -121,20 +95,18 @@ const Details = () => {
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {courseStructure.map((feature, idx) => {
-                return (
-                  <div
-                    key={idx}
-                    className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition"
-                  >
-                    <div className="flex items-center gap-3 mb-4">
-                      <CheckCircle className="w-8 h-8 text-gray-900" />
-                      <h3 className="text-xl font-semibold">{feature.key}</h3>
-                    </div>
-                    <p className="text-gray-600">{feature.value}</p>
+              {courseStructure.map((feature, idx) => (
+                <div
+                  key={idx}
+                  className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <CheckCircle className="w-8 h-8 text-gray-900" />
+                    <h3 className="text-xl font-semibold">{feature.key}</h3>
                   </div>
-                );
-              })}
+                  <p className="text-gray-600">{feature.value}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -149,28 +121,40 @@ const Details = () => {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {course.whats_included.map((feature, idx) => {
-              return (
-                <div key={idx} className="p-6">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-8 h-8 flex-shrink-0 text-gray-900" />
-                    <h3 className="text-lg md:text-xl font-semibold leading-snug">
-                      {feature}
-                    </h3>
-                  </div>
+            {course.whats_included.map((feature, idx) => (
+              <div key={idx} className="p-6">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-8 h-8 flex-shrink-0 text-gray-900" />
+                  <h3 className="text-lg md:text-xl font-semibold leading-snug">
+                    {feature}
+                  </h3>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Learning Outcomes */}
-      <section className="py-20 bg-white">
+      {/* Learning Outcomes */}
+      <section className="py-10 bg-white">
         <div className="max-w-6xl mx-auto px-6 md:px-12">
           <h2 className="text-3xl font-bold mb-10 text-center">
             What Will You Learn?
           </h2>
+
+          {/* ✅ Overview Section */}
+          {course.overview_description && (
+            <div className="max-w-5xl mx-auto mb-12">
+              <div className="p-8 border rounded-xl shadow-md hover:shadow-lg transition text-center">
+                <p className="text-md text-gray-600">
+                  {course.overview_description}
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* ✅ Bullet Points */}
           <div className="grid md:grid-cols-2 gap-6">
             {course.what_you_will_learn.map((point, idx) => (
               <div key={idx} className="flex items-start gap-3">
@@ -184,7 +168,7 @@ const Details = () => {
         </div>
       </section>
 
-      {/* Course Modules */}
+      {/* Curriculum */}
       {modules.length > 0 && (
         <section className="py-10 bg-white">
           <div className="max-w-4xl mx-auto px-6 md:px-12">
@@ -198,15 +182,25 @@ const Details = () => {
                   value={`module-${idx}`}
                   className="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden transition hover:shadow-lg"
                 >
+                  {/* Module Heading */}
                   <AccordionTrigger className="text-lg md:text-xl font-semibold px-6 py-4 flex justify-between items-center hover:bg-gray-50 capitalize">
                     {mod.module.replace(/_/g, " ")}
                   </AccordionTrigger>
-                  <AccordionContent className="px-6 py-4 bg-gray-50 border-t">
-                    <ul className="list-disc pl-6 space-y-2 text-gray-700 text-base">
-                      {mod.topics.map((topic, i) => (
-                        <li key={i}>{topic}</li>
-                      ))}
-                    </ul>
+
+                  {/* Classes + Topics */}
+                  <AccordionContent className="px-6 py-4 bg-gray-50 border-t space-y-6">
+                    {mod.topics.map((cls, i) => (
+                      <div key={i}>
+                        {/* Class Name */}
+                        <h3 className="font-bold text-lg mb-2">{cls.class}</h3>
+                        {/* Subpoints */}
+                        <div className="space-y-2 text-gray-700">
+                          {cls.topics.map((topic, j) => (
+                            <p key={j}>{topic}</p>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
                   </AccordionContent>
                 </AccordionItem>
               ))}
