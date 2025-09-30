@@ -145,7 +145,7 @@ const ProcessSteps = () => {
           <div className="grid md:grid-cols-2 items-center gap-10">
             {/* Left side: Subheading + Heading */}
             <div className="text-left">
-              <h3 className="text-sm font-semibold text-[#0F3069] uppercase tracking-wide">
+              <h3 className="text-sm font-semibold text-[#FF6575] uppercase tracking-wide">
                 From Learner to Leader
               </h3>
               <h2 className="text-3xl md:text-4xl font-extrabold text-[#0F3069] mt-2">

@@ -8,10 +8,10 @@ import whyUs2 from "@/assets/why-us/whyUs-2.webp";
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-gray-50 py-16 px-6 md:px-20 space-y-12">
+    <section className="bg-gray-50 py-16 px-6 sm:px-12 md:px-20 lg:px-32 xl:px-40 space-y-12">
       {/* Heading */}
       <div className="text-center mb-16">
-        <p className="text-[#0F3069] font-semibold uppercase tracking-wide">
+        <p className="text-sm font-semibold text-[#FF6575] uppercase tracking-wide">
           More reasons to choose us
         </p>
         <h2 className="text-2xl md:text-3xl font-bold text-[#0F3069] mt-2">

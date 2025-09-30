@@ -10,10 +10,10 @@ const ChooseCourse = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* First Box: Heading + Subheading + Button */}
         <div className="bg-white rounded-xl p-8 flex flex-col justify-center text-left transition-all duration-300 h-full">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F3069] mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#0F3069] mt-2">
             Programs We Offer
           </h2>
-          <p className="text-[#0F3069] font-semibold mb-6 text-base sm:text-lg">
+          <p className="text-[#0F3069] font-semibold mb-6 text-base sm:text-lg mt-4">
             Designed for students, career-switchers, and professionals aiming to
             upskill fast.
           </p>
@@ -41,7 +41,7 @@ const ChooseCourse = () => {
             </div>
 
             {/* Text */}
-            <div className="p-4 flex flex-col justify-between sm:h-52">
+            <div className="p-4 flex flex-col justify-between sm:h-52 px-4">
               <div>
                 <h3 className="text-lg font-bold text-[#0F3069] mb-1">
                   {course.title}

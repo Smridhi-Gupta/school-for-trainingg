@@ -33,7 +33,7 @@ const TopCompanies = () => {
         </h3>
 
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-extrabold text-white mt-2">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-white mt-2">
           Our Graduates Have Secured Roles at Top Companies in the Past
         </h2>
       </div>

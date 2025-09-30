@@ -25,12 +25,12 @@ export default function AboutUs() {
   }, []);
 
   return (
-    <section className="py-10 bg-white">
+    <section className="pt-10 pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         {/* Heading */}
         <div className="text-center mb-12">
-          <p className="text-sm text-[#FF6575] font-bold uppercase">About Edulogic</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0F3069] mt-2 leading-snug">
+          <p className="text-sm font-semibold text-[#FF6575] uppercase tracking-wide">About Edulogic</p>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#0F3069] mt-2">
             Our Large Benefit You <br /> Enroll From Our Courses
           </h2>
         </div>
