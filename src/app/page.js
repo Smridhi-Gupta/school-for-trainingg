@@ -1,3 +1,4 @@
+import AboutUs from "@/components/sections/AboutUs";
 import Achievements from "@/components/sections/Achievements";
 import ChooseCourse from "@/components/sections/ChooseCourse";
 import HomeHero from "@/components/sections/heros/HomeHero";
@@ -12,6 +13,7 @@ export default function Home() {
     <div>
       <HomeHero />
       <ProcessSteps />
+      <AboutUs />
       <TopCompanies />
       <ChooseCourse />
       {/* <Instructors /> */}

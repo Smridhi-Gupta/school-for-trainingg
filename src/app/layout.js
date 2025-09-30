@@ -3,8 +3,6 @@ import "./globals.css";
 import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
 
-// ✅ Header component import karo
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

@@ -25,48 +25,48 @@ const logos = [
 
 const TopCompanies = () => {
   return (
-    <section className="bg-gray-50 py-20 px-6">
-      <div className="container mx-auto text-center">
+    <section className="bg-[#0F3069] py-12">
+      <div className="text-center px-6">
         {/* Subheading */}
-        <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+        <h3 className="text-sm font-semibold text-[#FF6575] uppercase tracking-wide">
           Top Companies
         </h3>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-white mt-2">
           Our Graduates Have Secured Roles at Top Companies in the Past
         </h2>
+      </div>
 
-        {/* Logo Slider */}
-        <div className="overflow-hidden relative mt-12">
-          <motion.div
-            className="flex"
-            animate={{ x: ["0%", "-100%"] }}
-            transition={{
-              repeat: Infinity,
-              duration: 20,
-              ease: "linear",
-            }}
-          >
-            {[...logos, ...logos].map((logo, idx) => (
-              <div
-                key={idx}
-                className="flex flex-col items-center justify-center min-w-[220px]"
-              >
-                <div className="w-40 h-40 flex items-center justify-center bg-white shadow-md rounded-xl border border-gray-200 hover:shadow-lg transition p-4">
-                  <Image
-                    src={logo.src}
-                    alt={logo.name}
-                    width={150}
-                    height={150}
-                    className="object-contain"
-                  />
-                </div>
-                <p className="mt-3 text-gray-700 font-medium">{logo.name}</p>
+      {/* Logo Slider */}
+      <div className="overflow-hidden relative mt-8 w-full">
+        <motion.div
+          className="flex"
+          animate={{ x: ["0%", "-100%"] }}
+          transition={{
+            repeat: Infinity,
+            duration: 20,
+            ease: "linear",
+          }}
+        >
+          {[...logos, ...logos].map((logo, idx) => (
+            <div
+              key={idx}
+              className="flex flex-col items-center justify-center min-w-[220px]"
+            >
+              <div className="w-44 h-44 flex items-center justify-center bg-white shadow-md rounded-xl border border-gray-200 hover:shadow-lg transition p-5">
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={160}
+                  height={160}
+                  className="object-contain"
+                />
               </div>
-            ))}
-          </motion.div>
-        </div>
+              <p className="mt-3 text-white font-medium">{logo.name}</p>
+            </div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
