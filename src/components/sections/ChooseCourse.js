@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import courses from "./../../db/courses.json";
 
+
+
 const ChooseCourse = () => {
   return (
     <section className="bg-gray-50 py-28 px-6 md:px-12">
