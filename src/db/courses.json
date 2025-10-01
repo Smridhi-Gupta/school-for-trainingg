@@ -926,6 +926,120 @@
           }
         ]
       }
+    },
+    {
+      "title": "Quick Books Training Course",
+      "subtitle": "From spreadsheets to machine learning — become a data-informed decision maker.",
+      "weeks": "16 Weeks",
+      "status": "Registration Open",
+      "img": "/programs-offer/program-5.webp",
+      "img_banner": "/course-details-banner/banner-3.webp",
+      "description": "Master small business accounting with confidence—even if it’s your very first time! The QuickBooks Training Course at Transfotech Academy is designed for beginners and small business owners, covering everything from setting up your company file to managing invoices, expenses, payroll, and financial reporting. With step-by-step lessons on bookkeeping, bank reconciliation, and tax-ready reports, you’ll gain the practical skills needed to handle day-to-day accounting tasks with ease. This course is ideal for anyone looking to build a strong foundation in accounting software or start a career in bookkeeping.",
+      "overview_description": "This course is ideal for beginners, business owners, or anyone looking to learn QuickBooks from scratch. It also serves as a foundation for advanced accounting or finance courses.",
+      "course_structure_overview": {
+        "Hands-On Video Lectures": "Learn QuickBooks features and accounting principles through interactive, beginner-friendly video lessons.",
+        "Digital Guidebook": "Access a detailed guidebook that outlines step-by-step processes, essential terms, and QuickBooks tips.",
+        "Dedicated Support Group": "Engage with peers, ask questions, and share insights in a private support forum moderated by experts.",
+        "Weekly Live Q&A Classes": "Join live Zoom sessions with experienced instructors to clarify doubts and reinforce concepts."
+      },
+      "whats_included": [
+        "200+ Successful Graduates",
+        "20+ Hours of In-Person Training",
+        "Complete Course Notes & Quick Reference Sheets",
+        "Interactive Quizzes & Practice Scenarios",
+        "Live Instructor & Peer Support"
+      ],
+      "what_you_will_learn": [
+        "Set up a QuickBooks company file: Customize your chart of accounts and business profile.",
+        "Manage income & expenses: Create invoices, receive payments, and track bills.",
+        "Reconcile bank accounts: Link your bank, download transactions, and perform monthly reconciliations.",
+        "Generate financial reports: Understand profit & loss, balance sheet, and cash flow statements.",
+        "Handle payroll & taxes: Set up payroll, pay employees, and manage tax forms.",
+        "Use QuickBooks Online or Desktop: Get comfortable with navigation and key features of both versions.",
+        "Apply real-world practice: Reinforce skills with exercises modeled after real business scenarios."
+      ],
+      "course_details": {
+        "Introduction to QuickBooks": [
+          {
+            "class": "Introduction to QuickBooks",
+            "topics": [
+              "What is QuickBooks and why use it?",
+              "Desktop vs Online versions",
+              "Overview of accounting basics"
+            ]
+          }
+        ],
+        "Getting Started": [
+          {
+            "class": "Getting Started",
+            "topics": [
+              "Setting up your QuickBooks account",
+              "Creating a company file",
+              "Configuring business information and preferences"
+            ]
+          }
+        ],
+        "Navigating QuickBooks": [
+          {
+            "class": "Navigating QuickBooks",
+            "topics": [
+              "Exploring the dashboard and menu tools",
+              "Using the Chart of Accounts",
+              "Understanding user roles and permissions"
+            ]
+          }
+        ],
+        "Managing Customers & Sales": [
+          {
+            "class": "Managing Customers & Sales",
+            "topics": [
+              "Creating customer profiles",
+              "Invoicing clients and receiving payments",
+              "Issuing sales receipts and credits"
+            ]
+          }
+        ],
+        "Tracking Vendors & Expenses": [
+          {
+            "class": "Tracking Vendors & Expenses",
+            "topics": [
+              "Entering bills and expenses",
+              "Setting up vendors",
+              "Managing accounts payable"
+            ]
+          }
+        ],
+        "Banking & Reconciliation": [
+          {
+            "class": "Banking & Reconciliation",
+            "topics": [
+              "Connecting bank and credit card accounts",
+              "Downloading and categorizing transactions",
+              "Performing monthly bank reconciliations"
+            ]
+          }
+        ],
+        "Payroll & Employee Setup": [
+          {
+            "class": "Payroll & Employee Setup",
+            "topics": [
+              "Setting up employee profiles",
+              "Processing payroll and direct deposits",
+              "Payroll taxes and year-end filings"
+            ]
+          }
+        ],
+        "Reporting & Financial Insights": [
+          {
+            "class": "Reporting & Financial Insights",
+            "topics": [
+              "Generating Profit & Loss, Balance Sheet, and custom reports",
+              "Budget creation and tracking",
+              "Preparing for taxes and working with your accountant"
+            ]
+          }
+        ]
+      }
     }
   ]
 }

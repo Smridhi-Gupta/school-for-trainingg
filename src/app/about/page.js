@@ -1,3 +1,4 @@
+import AboutUs from '@/components/sections/AboutUs'
 import ChooseCourse from '@/components/sections/ChooseCourse'
 import AboutHero from '@/components/sections/heros/AboutHero'
 import Instructors from '@/components/sections/Instructors'
@@ -9,6 +10,7 @@ const page = () => {
   return (
     <div>
         <AboutHero />
+        <AboutUs />
         <ChooseCourse />
         <Journey />
         {/* <Instructors /> */}
